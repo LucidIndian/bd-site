@@ -11,5 +11,14 @@
   <h1>Welcome to Blue Drumlin!</h1>
   <h2>Coming soon</h2>
   <img src="assets/Blue_Drumlin_Logo_500pxsq_whiteBG_Bold_D.png" width="300px">
+
+  <ul>
+    {% for post in site.posts %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
 </body>
 </html>
