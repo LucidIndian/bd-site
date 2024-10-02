@@ -1,16 +1,10 @@
 ---
 layout: post
-title:  "Rails World 2024!"
+title:  "My Rails World 2024 Experience!"
 ---
 
-# Rails World 2024
+# The challenges, embarrassments, losses & wins of Rails World 24
 
-**Hello world**, this is my 2nd Jekyll blog post.
+**Hello world**, I had the honor of attending Rails World 2024 after winning a podcast contest with IndieRails!
 
-I hope you like it!
-
-Rails World 2024
-
-Rails World 2024
-
-Rails World 2024
+Let's go!
