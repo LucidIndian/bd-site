@@ -59,7 +59,7 @@ Actually a win because:
 2. I learned how to prepare better for a pair-coding session. If I had localized or described my situation with more specificity, it may have led to more meaningful work and a breakthrough. Proper Preparation Prevents Poor Performance!
 3. I feel like I got solidly set on a personal quest to figure this out once and for all, to connect the dots for myself and others: How can we use Rails to write Shopify apps that work!? 
 
-Making it easier for Rails devs to build for the largest Rails app in the world seems like a connection that needs to happen! THis will be a future post.
+Making it easier for Rails devs to build for the largest Rails app in the world seems like a connection that needs to happen! This will be a future post.
 
 ### My dirty laptop screen! 
 
@@ -67,24 +67,27 @@ Ew. Never before have I seen my laptop screen in the late-morning light of the B
 
 Fingerprints and a lot of who knows what. 
 
-Actually a win because I just ordered [a laptop cleaning kit](https://amzn.to/3Y6SVC6) and wont let anyone else see that mess again.
+Actually a win because I just ordered [a laptop cleaning kit](https://amzn.to/3Y6SVC6) and won't let anyone else see that mess again! 
+
+Learn from my fail-win and clean your laptop too before it's too late!
 
 ### Password exposed!
 
 During a pairing session with Test Double, I repeatedly typed my admin password incorrectly in front of two devs after they repeatedly aided me by looking away, then I repeated to type it in plain command line text for them to see!! LOL.
 
-How did that happen? The Test Double dev was asking me perform some actions. Specifically, we started typing more CLI code than I typically do. When the CLI prompted me for my password, I had  assumed it was my Git password instead of my MacBook user's password. 
+How did that happen? The Test Double dev was asking me perform some actions. Specifically, more CLI code than I typically use. When the CLI prompted me for my password, I had assumed it was my Git password instead of my MacBook user's password. FAIL.
 
-Actually a win because they were kind about it. I relearned how to reset my password, it's re-secured, and I have better security habits going forward.
+Actually a win because: 
+- they were kind about it. 
+- I relearned how to reset my password, it's re-secured, and I have better security habits going forward.
 
 "It’s important to change your login password from time to time to protect your privacy." [Change the login password on Mac](https://support.apple.com/guide/mac-help/change-the-login-password-on-mac-mchlp1550/mac)
-
 
 ## Losses that were actually wins
 
 ### Lost the idea that "solo traveling is not important"
 
-Actually a win because being OK or even rejuvenated by being alone occasionally is good! 
+Actually a win because being OK or even rejuvenated by being alone occasionally is good! Put on your Oxygen mask before assisting others.
 
 ### Lost the idea that I am not ready to build & contribute 
 
