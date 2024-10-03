@@ -75,12 +75,12 @@ Lost the idea that I am not ready to build and contribute. Actually a win becaus
 ## More Wins
 
 -  Met & talked with: 
-  - Chris Oliver about his customer service
-  - Andrea Formera about her Rails World talk
-  - Adam McCrea from Judoscale at the Clio party
-  - Jeremy & Jess from IndieRails 
-  - Aaron Patterson about his closing keynote
-  - and many more!
+    - Chris Oliver about his customer service
+    - Andrea Formera about her Rails World talk
+    - Adam McCrea from Judoscale at the Clio party
+    - Jeremy & Jess from IndieRails 
+    - Aaron Patterson about his closing keynote
+    - and many more friendly and smart people!
 - First time in Canada - Beaver tail and Poutine!
 - All the info & stories shared in the tracks and Lightning talks
 - Top quality merch & stickers acquired
