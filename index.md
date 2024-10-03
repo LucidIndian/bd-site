@@ -3,9 +3,10 @@ title: Blue Drumlin
 ---
 
 ## Blue Drumlin builds
-- A framework for e-commerce customer service - SlopeCS
-- A location-based gardening journal - GeoGardening
-- A project management tool for DIY homeowners - DIY-er
+- A framework for e-commerce customer service - [SlopeCS](https://slopecs.com/)
+- A location-based gardening journal - [GeoGardening](https://geogardening.app/)
+- Better email validation & verification - Email200
+- A project management tool for homeowners - DIY-er
 
 ## Posts
 
