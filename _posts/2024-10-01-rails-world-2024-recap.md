@@ -4,7 +4,7 @@ title:  "My Rails World 2024 Challenges, Fails, Losses & Wins"
 tags: Rails coding
 ---
 
-First, sorry, the title is misleading. *Here*, there are only wins underneath it all.
+Sorry, the title is misleading. *Here*, there are only wins.
 
 ## Hello (Rails) world
 
@@ -42,46 +42,58 @@ I'm still accelerating; moving faster dup the long ramp towards proficiency and 
     1. I got paired with a dev that knew something about it so we started trouble shooting there and he even let me tether to his device. '
 
 ## Fails that were actually wins
-1. I failed resolve my confusion with the [shopify_app gem](https://github.com/Shopify/shopify_app). One of my goals is to get a vanilla Rails app working as a Shopify app.
-  1. Actually a win because 
-    1. I learned why Remix and not Rails is not the golden path to create a new Shopify app. 
-    2.  I feel like I got set on a personal path to figure this out, to connect the dots for myself and others: How can we use Rails without frills to write Shopify apps!? 
 
-2. My dirty laptop screen! Ew. Never saw my laptop in the light of the late morning Brick Works before - I work in a dark basement in Seattle where the sun is rare. 
+### shopify_app gem
+
+I failed resolve my confusion with the [shopify_app gem](https://github.com/Shopify/shopify_app). One of my goals is to get a vanilla Rails app working as a Shopify app.
+
+Actually a win because: 
+  1. I learned why Remix and not Rails is not the golden path to create a new Shopify app. 
+  2.  I feel like I got set on a personal path to figure this out, to connect the dots for myself and others: How can we use Rails without frills to write Shopify apps!? 
+
+### My dirty laptop screen! 
+
+Ew. Never saw my laptop in the light of the late morning Brick Works before - I work in a dark basement in Seattle where the sun is rare. 
   - Actually a win because I just ordered a cleaning kit and wont let anyone else see that mess again.
 
-3. During a pairing sessions, I repeatedly typed my admin password incorrectly in front of two devs after they repeatedly aided me by looking away, then I typed it in plain command line text for them to see, twice!! LOL. 
-  1. Actually a win because they were kind and I re-learned how to reset my password and now it's re-secured + I have better security habits.
+### Password exposed!
+
+During a pairing session with Test Double, I repeatedly typed my admin password incorrectly in front of two devs after they repeatedly aided me by looking away, then I typed it in plain command line text for them to see, twice!! LOL. 
+
+Actually a win because they were kind and I re-learned how to reset my password and now it's re-secured + I have better security habits.
 
 ## Losses that were actually wins
-1. I lost the notion that "solo traveling is not important". 
-  1. Actually a win because being OK or even rejuvenated by being alone is alright! 
-2. Lost the idea that I am not ready to build and contribute. 
-  1. Actually a win because now I have more percevied agency, I thought I could do alot before, but now, almost anything is possible. 
 
-## More Wins that are pure wins
+I lost the notion that "solo traveling is not important". Actually a win because being OK or even rejuvenated by being alone is alright! 
 
-- Met & talked with: 
+Lost the idea that I am not ready to build and contribute. Actually a win because now I have more perceived agency, I thought I could do a lot before, but now, almost anything is possible!
+
+## More Wins
+
+-  Met & talked with: 
   - Chris Oliver about his customer service
   - Andrea Formera about her Rails World talk
   - Adam McCrea from Judoscale at the Clio party
-  - Jeremy & Jess from IndieRails
+  - Jeremy & Jess from IndieRails 
   - Aaron Patterson about his closing keynote
   - and many more!
 - First time in Canada - Beaver tail and Poutine!
 - All the info & stories shared in the tracks and Lightning talks
 - Top quality merch & stickers acquired
 - Saw downtown Toronto: walked dozens of miles through various neighborhoods and districts and three levels of Shopify office craziness to cap it off!
-- Reignited my drive to give back, contribute and build!
+- Reignited my drive to give back: [reviewed an open PR for the Rails Guides](https://github.com/rails/rails/pull/52951#issuecomment-2391916720)
+- contribute and build!
 
 ### What a great conference, woo hoo!
 
 ## What's next?
 
-Like you, I have a unique combination of skills and experiences. Mine are: football, exercise science, customer service, e-commerce, Rails, and creating bootstrapped businesses.
+Like you, I have a unique combination of skills and experiences. Some of mine are: football, exercise science, customer service, e-commerce, Rails, and creating bootstrapped businesses.
 
-At this stage, I feel like the biggest way, the best way for me to contribute is to build a successful business on Rails. One that could become a Rails World sponsor some day. One that can afford to hire Senior and early careers Rails devs.
+At this stage, I feel like the biggest way, the best way for me to contribute, my "calling" may be to use these skills to build a successful business, or several, with Ruby on Rails. One that could become a Rails World sponsor some day. One that can afford to hire Senior and early careers Rails devs.
 
-I want to do this as another proof of concept, to prove an app can thrive before IPO, but also as something that is a significant generator of financial capital. Money talks. 
+I want to do this as another proof of concept, to prove an app can thrive after launch and before IPO, but also as something that is a significant generator of financial capital. Money talks. 
 
-I will use Blue Drumlin to make things with Rails for real paying customers! Growing something that can give to me and give back to the community!
+I will use Blue Drumlin to make things with Rails for real paying customers! 
+
+Growing something that can give to me and give back to the community!
