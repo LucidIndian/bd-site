@@ -8,7 +8,7 @@ Sorry, the title is misleading. *Here*, there are only wins.
 
 ## Hello (Rails) world
 
-My name is Tygh Walters, and this is my story of having the exquisite privilege to unexpectedly attend [Rails World](https://rubyonrails.org/world/) 2024 in Toronto Canada! 
+My name is Tygh Walters, and this is my story of having the exquisite privilege to unexpectedly attend [Rails World](https://rubyonrails.org/world/) 2024 in Toronto, Canada! 
 
 It happened by a chance interaction with the IndieRails podcast account on social media. I answered a question and won a ticket sponsored by Buzzsprout to only the second Rails World which had sold out (in less than an hour) months before.
 
@@ -16,7 +16,7 @@ What a serendipity! I never win anything!! LFG!!!
 
 Since that day and for the past several weeks I've been on an energizing journey to soak it all up and put this fortune to good use! 
 
-I'll admit, I was a bit nervous `{self_doubt: 'Am I developer enough?'}` but overall ready to show up and engage!
+I'll admit, I was a bit nervous `{self_doubt: 'Am I developer enough?'}` but ready to show up and engage!
 
 I can only control what I do and think, not what happens. 
 
@@ -30,9 +30,9 @@ I committed to doing it all. Leaning into the conference as much as I could, bef
 - Read all the posts and clicked all the links
 - Completed the feedback survey
 
-You could say that I started jogging with intention up the Rails ramp instead of casually strolling along. 
+You could say that I started jogging with intention up the long Rails ramp instead of casually strolling along. 
 
-I'm still accelerating; moving faster dup the long ramp towards proficiency and happiness while trying to repay the debt of gratitude I have.
+I'm still accelerating; moving faster towards proficiency and happiness while trying to repay the debt of gratitude I have.
 
 ## Challenges that were actually wins
 
@@ -42,62 +42,83 @@ The Rails World WI-FI glitched right before my pair coding session with Shopify!
 
 Actually a win because 
 1. I was reminded how vital having a reliable source of personal internet can be! My international network plan throttled my usage until it was down to 3G only by 11am. 
-2. I got paired with a dev that knew something about it so we started trouble shooting there and he even let me tether to his device.
+2. I got paired with a gracious dev that knew something about it so we started troubleshooting and he even let me tether to his device.
 
 ## Fails that were actually wins
 
 ### shopify_app gem
 
-I failed resolve my confusion with the [shopify_app gem](https://github.com/Shopify/shopify_app). One of my goals is to get a vanilla Rails app working as a Shopify app. Shopify created a way to do this but it has recently become incompatible with the gem, at least I believe!?
+I failed to resolve my confusion around the [shopify_app gem](https://github.com/Shopify/shopify_app). One of my goals is to get a vanilla Rails app working as a Shopify app. Shopify created this gem for us but it appears it has recently become incompatible with Shopify's new managed installation, at least I believe it has!? To bo continued...
 
 Actually a win because: 
-1. I learned why Remix and not Rails is the golden path to create a new Shopify app. 
-2. I feel like I got solidly set on a personal vendetta/path to figure this out once and for all, to connect the dots for myself and others: How can we use Rails without frills to write Shopify apps that work!? 
+1. I learned why Remix and not Rails is the golden path to create a new Shopify app. Shopify owns Remix!
+2. I learned how to prepare better for a pair-coding session. If I had localized or described my situation with more specificity, it may have led to more meaningful work and a breakthrough. Proper Preparation Prevents Poor Performance!
+3. I feel like I got solidly set on a personal quest to figure this out once and for all, to connect the dots for myself and others: How can we use Rails to write Shopify apps that work!? 
+
+Making it easier for Rails devs to build for the largest Rails app in the world seems like a connection that needs to happen! THis will be a future post.
 
 ### My dirty laptop screen! 
 
-Ew. Never saw my laptop in the light of the late morning Brick Works. I work in a dark basement in Seattle where the sunshine is rare. 
+Ew. Never before have I seen my laptop screen in the late-morning light of the Brick Works building. I work in a dark basement in Seattle where the sunshine is rare. 
 
-Actually a win because I just ordered a cleaning kit and wont let anyone else see that mess again.
+Fingerprints and a lot of who knows what. 
+
+Actually a win because I just ordered [a laptop cleaning kit](https://amzn.to/3Y6SVC6) and wont let anyone else see that mess again.
 
 ### Password exposed!
 
 During a pairing session with Test Double, I repeatedly typed my admin password incorrectly in front of two devs after they repeatedly aided me by looking away, then I repeated to type it in plain command line text for them to see!! LOL.
 
-Actually a win because they were kind and I re-learned how to reset my password and now it's re-secured + I have better security habits.
+How did that happen? The Test Double dev was asking me perform some actions. Specifically, we started typing more CLI code than I typically do. When the CLI prompted me for my password, I had  assumed it was my Git password instead of my MacBook user's password. 
+
+Actually a win because they were kind about it. I relearned how to reset my password, it's re-secured, and I have better security habits going forward.
+
+"It’s important to change your login password from time to time to protect your privacy." [Change the login password on Mac](https://support.apple.com/guide/mac-help/change-the-login-password-on-mac-mchlp1550/mac)
+
 
 ## Losses that were actually wins
 
-I lost the notion that "solo traveling is not important". Actually a win because being OK or even rejuvenated by being alone is alright! 
+### Lost the idea that "solo traveling is not important"
 
-Lost the idea that I am not ready to build and contribute. Actually a win because now I have more perceived agency, I thought I could do a lot before, but now, almost anything is possible!
+Actually a win because being OK or even rejuvenated by being alone occasionally is good! 
+
+### Lost the idea that I am not ready to build & contribute 
+
+Actually a win because now I have more perceived agency, and responsibility. I thought I could do a lot before, but now, almost anything is possible!
 
 ## More Wins
 
--  Met & talked with: 
+-  Met & talked with many friendly folks, including but not limited to: 
     - Chris Oliver about his customer service
     - Andrea Formera about her Rails World talk
-    - Adam McCrea from Judoscale at the Clio party
-    - Jeremy & Jess from IndieRails 
+    - Adam McCrea about Judoscale at the Clio party
+    - Jeremy & Jess from IndieRails about many things
     - Aaron Patterson about his closing keynote
-    - and many more friendly and smart people!
+    - Product Managers at Shopify
+
 - First time in Canada - Beaver tail and Poutine!
 - All the info & stories shared in the tracks and Lightning talks
-- Top quality merch & stickers acquired
-- Saw downtown Toronto: walked dozens of miles through various neighborhoods and districts and three levels of Shopify office craziness to cap it off!
-- Reignited my drive to give back: [reviewed an open PR for the Rails Guides](https://github.com/rails/rails/pull/52951#issuecomment-2391916720)
-- contribute and build!
+- Top quality merch & stickers acquired. And [Rails has a new store!](https://merch.rubyonrails.org/)
+- Saw Toronto: 
+    - walked dozens of miles through various neighborhoods and districts
+    - three levels of Shopify office craziness 
+    - Lake Ontario 
+    - UP train
+- Inspired me to give back: [reviewed an open PR for the Rails Guides](https://github.com/rails/rails/pull/52951#issuecomment-2391916720)
+-  Reignited my drive to build!
 
-### What a great conference, woo hoo!
+What a great conference, thank you to all that made it happen!
 
 ## What's next?
 
 Like you, I have a unique combination of skills and experiences. Some of mine are: football, exercise science, customer service, e-commerce, Rails, and creating bootstrapped businesses.
 
-At this stage, I feel like the biggest way, the best way for me to contribute, my "calling" may be to use these skills to build a successful business, or several, with Ruby on Rails. One that could become a Rails World sponsor some day. One that can afford to hire Senior and early careers Rails devs.
+At this stage, I feel like the biggest way, the best way for me to contribute, my "calling", may be to use these skills to build a  business, or several, with Ruby on Rails. One that could become a Rails World sponsor some day. One that could potentially IPO!? One that hires senior and early career Rails devs alike.
 
-I want to do this as another proof of concept, to prove an app can thrive after launch and before IPO, but also as something that is a significant generator of financial capital. Money talks. 
+I'm going to do this, but I want to do this in Rails, as another proof of concept, but to test what others say is true: that Rails is the best way for one person to test ideas and then to make them go farther.
 
-I will use Blue Drumlin to make things with Rails for real paying customers! 
+I'm going to build an app can thrive after launch and before IPO.
 
-Growing something that can give to me and give back to the community!
+I will use Blue Drumlin to make beautiful and useful things with Ruby & Rails for real paying customers!
+
+Growing something that can fulfill me and give back to the community that made it possible!
