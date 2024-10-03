@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Welcome to Blue Drumlin!!!"
+tag: coding  
 ---
 
 # Welcome

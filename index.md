@@ -1,8 +1,13 @@
 ---
-title: Welcome to Blue Drumlin!
+title: Blue Drumlin
 ---
 
-The best content on the internet!
+## Blue Drumlin builds
+- A framework for e-commerce customer service - SlopeCS
+- A location-based gardening journal - GeoGardening
+- A project management tool for DIY homeowners - DIY-er
+
+## Posts
 
 <ul>
   {% for post in site.posts %}
@@ -11,3 +16,5 @@ The best content on the internet!
     </li>
   {% endfor %}
 </ul>
+
+X: @BlueDrumlin

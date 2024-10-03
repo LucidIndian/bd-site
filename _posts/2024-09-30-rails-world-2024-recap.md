@@ -1,29 +1,34 @@
 ---
 layout: post
-title:  "My Rails World 2024 Experience!"
+title:  "My Rails World 2024 Challenges, Embarrassments, Fails, Losses & Wins"
+tags: Rails coding
 ---
 
-## Reviewing My Challenges, Embarrassments, Fails, Losses, and Wins at Rails World 2024
+First, sorry, the title is purposefully misleading. Here, there are only *wins* underneath it all.
 
-First: the title is purposefully misleading, there are only *wins*.
+## Hello world, My name is 
 
-**Hello world**, My name is Tygh Walters. I had the honor of attending Rails World 2024 after winning a contest through IndieRails and Buzzsprout!
+Tygh Walters, and this is my story of having the exquisite privilege to unexpectedly attend Rails World 2024 in Toronto Canada! 
 
+It happened through a chance interaction with the IndieRails podcast account on social media. I answered a question and won a sponsored ticket to only the second Rails World which had sold out (in less than an hour) months before.
 
-I had the exquisite privilege to unexpectedly attend Rails World through an interaction with the Indy rails podcast on x. link to post. that interaction led to the acquisition of my ticket and for the past 3 weeks have been on a energizing Journey. 
+What a serendipity! 
 
-I never win anything! Let's go!!!
+I never win anything! LFG!!! 
 
-I was a little nervous but ready…
+Since that day and for the past several weeks I've been on an energizing journey to soak it all up and put this fortune to good use! 
 
-Above a, I committed to leaning into the conference as much as I could. Participate in most discussions, 
+I was a little nervous { self-doubt: "Am I developer enough?" } but ready to be there…
 
-- Made an X post per day about my conference prep
-- Submitted a Lightning Talk - did not get accepted
-- Signed-up for two pair-coding sessions with Shopify and Test Double
-- Read all the posts, click all the links, etc. 
+I know I can only control what I do and think, not what happens, so I committed to doing it all, leaning into the conference as much as I could, before, during and after. How?:
+- Made an [28-post thread on X](https://x.com/TyghWalters/status/1830667320378958222), one per day re: behinds the scenes of my conference prep
+- Joined & participated in online Campfire discussions 
+- Submitted a Lightning Talk "'The Rails Way' to Do Customer Service" - did not get accepted
+- Signed-up for two pair-coding sessions with Shopify and Test devs
+- Introduced myself to many fellow attendees
+- Read all the posts and clicked all the links
 
-You could say that I started running up the Rails ramp instead of walking or standing. I'm here, and moving faster towards proficiency and happiness.
+You could say that I started running up the Rails ramp instead of walking or strolling. I was accelerating; moving faster towards proficiency and happiness and trying to repay the debt of gratitude I had for attending.
 
 ## challenges that were actually wins
 
@@ -37,27 +42,26 @@ Days before rails world a sign up form for the Shopify and test double pair codi
 
 ## Embarrassments that were actually wins
 
-- dirty screen! Ew. Never saw my laptop in the light before - I work in a basement. 
--- Actually a win because I just ordered a cleaning kit!
-- I typed my password in front of two devs after they repeatedly looked away!
--- Actually a win because I re-learned how to reset my password
-
+- My dirty laptop screen! Ew. Never saw my laptop in the light of the late morning Brickworks before - I work in a dark basement in Seattle where the sun rare. 
+  - Actually a win because I just ordered a cleaning kit and wont let anyone else see that again.
+- I repeatedly typed my password incorrectly in front of two devs after they repeatedly aided me by looking away, then I typed it in plain command line text for them to see!! LOL.
+  - Actually a win because I re-learned how to reset my password and now it re-secured + I have better security habits.
 
 ## Fails that were actually wins
-- I did not resolve my shopify_app gem issue.
--- Actually a win because I learned about why Rails is not the golden path to create a new Shopify app. 
-
+- I did not resolve my confusion with the shopify_app gem.
+  - Actually a win because 
+   - I learned why Remix and not Rails is not the golden path to create a new Shopify app. 
+   - I feel like I got set on a path to figure this out and connect the dots.  
 
 ## Losses that were actually wins
 - I lost the notion that "solo traveling is not important". That's a win. 
--- Actually a win because being OK or even rejuvenated alone is alright!
+  - Actually a win because being OK or even rejuvenated alone is alright!
 
-
-## More Wins
+## More Wins that are pure wins
 
 - Met & talked with Chris Oliver!
-- 3 levels of Shopify office craziness!
-- First time in Canada!
+- Walked three levels of Shopify office craziness in downtown Toronto!
+- First time in Canada - had a Beaver tail and poutine!
 - Top quality merch & stickers acquired
 
 ### What a great conference, woo hoo!
