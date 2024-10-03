@@ -4,7 +4,7 @@ plugins:
 title: Blue Drumlin
 logo: /assets/img/Blue_Drumlin_Logo_500pxsq_whiteBG_Bold_D.png
 author: Tygh Walters
-description: The diary of a bootstrapping a Saas with Ruby on Rails
+description: A diary of building on the web with Ruby on Rails
 show_downloads: false
 google_analytics:
 # theme: jekyll-theme-minimal
