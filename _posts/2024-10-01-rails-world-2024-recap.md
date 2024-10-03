@@ -36,29 +36,33 @@ I'm still accelerating; moving faster dup the long ramp towards proficiency and 
 
 ## Challenges that were actually wins
 
-1. The Rails World WI-FI glitched right before my pair coding session with Shopify! 
-  1. Actually a win because 
-    1. I was reminded how vital having a reliable source of personal internet can be! My international network plan throttled my usage until it was down to 3G only by 11am. 
-    1. I got paired with a dev that knew something about it so we started trouble shooting there and he even let me tether to his device. '
+### No internet
+
+The Rails World WI-FI glitched right before my pair coding session with Shopify! 
+
+Actually a win because 
+1. I was reminded how vital having a reliable source of personal internet can be! My international network plan throttled my usage until it was down to 3G only by 11am. 
+2. I got paired with a dev that knew something about it so we started trouble shooting there and he even let me tether to his device.
 
 ## Fails that were actually wins
 
 ### shopify_app gem
 
-I failed resolve my confusion with the [shopify_app gem](https://github.com/Shopify/shopify_app). One of my goals is to get a vanilla Rails app working as a Shopify app.
+I failed resolve my confusion with the [shopify_app gem](https://github.com/Shopify/shopify_app). One of my goals is to get a vanilla Rails app working as a Shopify app. Shopify created a way to do this but it has recently become incompatible with the gem, at least I believe!?
 
 Actually a win because: 
-  1. I learned why Remix and not Rails is not the golden path to create a new Shopify app. 
-  2.  I feel like I got set on a personal path to figure this out, to connect the dots for myself and others: How can we use Rails without frills to write Shopify apps!? 
+1. I learned why Remix and not Rails is the golden path to create a new Shopify app. 
+2. I feel like I got solidly set on a personal vendetta/path to figure this out once and for all, to connect the dots for myself and others: How can we use Rails without frills to write Shopify apps that work!? 
 
 ### My dirty laptop screen! 
 
-Ew. Never saw my laptop in the light of the late morning Brick Works before - I work in a dark basement in Seattle where the sun is rare. 
-  - Actually a win because I just ordered a cleaning kit and wont let anyone else see that mess again.
+Ew. Never saw my laptop in the light of the late morning Brick Works. I work in a dark basement in Seattle where the sunshine is rare. 
+
+Actually a win because I just ordered a cleaning kit and wont let anyone else see that mess again.
 
 ### Password exposed!
 
-During a pairing session with Test Double, I repeatedly typed my admin password incorrectly in front of two devs after they repeatedly aided me by looking away, then I typed it in plain command line text for them to see, twice!! LOL. 
+During a pairing session with Test Double, I repeatedly typed my admin password incorrectly in front of two devs after they repeatedly aided me by looking away, then I repeated to type it in plain command line text for them to see!! LOL.
 
 Actually a win because they were kind and I re-learned how to reset my password and now it's re-secured + I have better security habits.
 
