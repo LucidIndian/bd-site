@@ -22,27 +22,31 @@ I can only control what I do and think, not what happens.
 
 I committed to doing it all. Leaning into the conference as much as I could, before, during and after. How?:
 
-- Made an [28-post thread on X](https://x.com/TyghWalters/status/1830667320378958222), one per day re: behinds the scenes of my conference prep
-- Joined & participated in online Campfire discussions 
+- Made an [28-post thread on X](https://x.com/TyghWalters/status/1830667320378958222), one per day re: behind the scenes of my conference prep
+- Joined & participated in online Campfire discussions for attendees
 - Submitted a Lightning Talk "'The Rails Way' to Do Customer Service" - did not get accepted
-- Signed-up for two pair-coding sessions with Shopify and Test Double devs
-- Introduced myself to many fellow attendees
+- Signed up for two pair-coding sessions one with Shopify dev and one with a Test Double dev
+- Introduced myself to many fellow attendees sitting nearby
 - Read all the posts and clicked all the links
 - Completed the feedback survey
 
-You could say that I started jogging with intention up the long Rails ramp instead of casually strolling along. 
+You could say that instead of casually strolling along, I started jogging with intention up the long Rails ramp.  
 
 I'm still accelerating; moving faster towards proficiency and happiness while trying to repay the debt of gratitude I have.
 
 ## Challenges that were actually wins
 
-### No internet
+### No internet!?
 
-The Rails World WI-FI glitched right before my pair coding session with Shopify! 
+Knowing I had two pair coding sessions on Friday I spent the Thursday night reviewing my notes and planning what to discuss. I had attempted to find two areas I was blocked in my personal projects.
 
-Actually a win because 
-1. I was reminded how vital having a reliable source of personal internet can be! My international network plan throttled my usage until it was down to 3G only by 11am. 
-2. I got paired with a gracious dev that knew something about it so we started troubleshooting and he even let me tether to his device.
+On Friday morning, I lost connection to the event's WI-FI only hours before my pair coding session with Shopify!
+
+No worries, right? I can use my network internet. Well, my international plan throttled my usage down to 3G and it was crawling. 
+
+Actually a win because:
+1. I was reminded how vital having a reliable source of personal internet can be! In the process of reviewing options
+2. I got paired with a gracious dev that knew something about it so we started troubleshooting and he even let me tether to his device
 
 ## Fails that were actually wins
 
