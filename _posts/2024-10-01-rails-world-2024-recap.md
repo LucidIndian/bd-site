@@ -10,17 +10,17 @@ Sorry, the title is misleading. Here, there are _only wins_.
 
 My name is Tygh Walters, and this is my story of having the exquisite privilege to unexpectedly attend [Rails World](https://rubyonrails.org/world/) 2024 in Toronto, Canada! 
 
-It happened by a chance interaction with the [IndieRails](https://www.indierails.com/) podcast account on social media. I answered a question and won a ticket sponsored by [Buzzsprout](https://www.buzzsprout.com/) to only the second Rails World which had sold out (in less than an hour) months before.
+It happened by a chance interaction with the [IndieRails](https://www.indierails.com/) podcast account on social media. I answered a question and won a ticket sponsored by [Buzzsprout](https://www.buzzsprout.com/) to only the second Rails World which sold out in less than an hour months earlier.
 
 What a serendipity! I never win anything!! LFG!!! 
 
-Since that day and for the past several weeks I've been on an energizing journey to soak it all up and put this fortune to good use.
+Since that day and for the past several weeks I've been on an energizing journey to soak it all up while putting this good fortune to good use.
 
-I'll admit, I was a bit nervous `{self_doubt: 'Am I developer enough?'}` but ready to show up and engage.
+I'll admit, I was a bit nervous `{self_doubt: 'Am I developer enough?'}` but overall feeling ready to show up and engage.
 
 I can only control what I do (the process), not what happens (the outcome). 
 
-I committed to doing it all. Leaning into the conference as much as I could. Process on 1,000%! How?:
+I committed to doing it all. Leaning into the conference as much as I could. Process orientation on 1,000%! How?:
 
 - Made an [28-post thread on X](https://x.com/TyghWalters/status/1830667320378958222), one per day re: behind the scenes of my conference prep & perspective
 - Joined & participated in online Campfire discussions for attendees
@@ -29,6 +29,7 @@ I committed to doing it all. Leaning into the conference as much as I could. Pro
 - Introduced myself to many fellow attendees sitting nearby
 - Read all the posts and clicked all the links
 - Completed the feedback survey
+- All the while continuing to build my own Rails apps
 
 You could say that instead of casually strolling along the long Rails ramp, I started jogging with intention.  
 
@@ -38,18 +39,17 @@ I'm still accelerating; moving faster towards proficiency and happiness while tr
 
 ### Lodging, the venue, and parties are miles apart
 
-Attendees were required to travel multi-kilometer distances multiple times per day during busy traffic. 
+In order to attend all the events, attendees were required to travel multi-kilometer distances between remote locations multiple times per day amongst big-city traffic. 
 
-Ubering everywhere gets expensive and indeterminate, public transit takes a long time, renting a car ($$)? 
+Ubering everywhere gets expensive, public transit is usually confusing and indeterminate, and renting a car is another huge hassle. 
 
 Rails World provided shuttles for some but I saw this as an opportunity to do it a simpler way and just walk everywhere. 
 
 Actually a win because:
-- I already enjoy walking, and I can walk fast
-- Saw Toronto up close - walked dozens of miles through various neighborhoods and districts
-- Saved $ on paid options 
+- Already enjoy walking, and I can walk fast
+- Saw Toronto up close - walked dozens of miles through various neighborhoods and districts, and to the shore of Lake Ontario
+- Saved significant $ by skipping paid options 
 - Got excellent exercise 4 days in a row!
-- Walked to the shore of Lake Ontario
 - Took the UP train (Union station to Toronto Pearson International Airport)
 
 It was a great call. There were many other people walking all the major streets almost all day long.
