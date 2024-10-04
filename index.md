@@ -2,6 +2,8 @@
 title: Blue Drumlin
 ---
 
+Welcome to Blue Drumlin, a software company building with Ruby on Rails.
+
 ## Blue Drumlin builds
 - A framework for e-commerce customer service - [SlopeCS](https://slopecs.com/)
 - A location-based gardening journal - [GeoGardening](https://geogardening.app/)
@@ -18,4 +20,4 @@ title: Blue Drumlin
   {% endfor %}
 </ul>
 
-X: @BlueDrumlin
+X: [@BlueDrumlin](https://x.com/bluedrumlin)
