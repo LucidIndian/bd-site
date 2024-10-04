@@ -3,13 +3,18 @@ layout: post
 title:  "My Rails World 2024 Challenges, Fails, Losses & Wins"
 categories: rails coding
 tags:
+image:
+  path: /assets/IMG_6580.jpeg
+  height: 300
+  width: 
+  alt: My Rails World Badge
 ---
-
-Sorry, the title is misleading. Here, there are _only wins_.
 
 ## Hello (Rails) world
 
 My name is Tygh Walters, and this is my story of having the exquisite privilege to unexpectedly attend [Rails World](https://rubyonrails.org/world/) 2024 in Toronto, Canada! 
+
+### Sorry, the title is misleading. Here, there are _only wins_.
 
 It happened by a chance interaction with the [IndieRails](https://www.indierails.com/) podcast account on social media. I answered a question and won a ticket sponsored by [Buzzsprout](https://www.buzzsprout.com/) to only the second Rails World which sold out in less than an hour months earlier.
 
