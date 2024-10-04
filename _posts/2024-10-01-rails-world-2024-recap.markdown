@@ -3,12 +3,15 @@ layout: post
 title:  "My Rails World 2024 Challenges, Fails, Losses & Wins"
 categories: rails coding
 tags:
-# image:
+image: /assets/IMG_6580.jpeg
 #   path: /assets/IMG_6580.jpeg
 #   height: 300
 #   width: 
 #   alt: My Rails World Badge
 ---
+
+![Rails World badge](/assets/IMG_6580.jpeg)
+
 
 ## Hello (Rails) world
 
