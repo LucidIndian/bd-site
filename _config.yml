@@ -1,22 +1,54 @@
-remote_theme: pages-themes/minimal@v0.2.0
-# theme: jekyll-theme-minimal
-# https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll#plugins
-plugins:
-  - jekyll-remote-theme # add this line to the plugins list if you already have one
-  - jekyll-seo-tag
-domain: bluedrumlin.com  # if you want to force HTTPS, specify the domain without the http, e.g. example.com
-url: https://bluedrumlin.com  # the base hostname and protocol for my site
-title: Blue Drumlin
-logo: /assets/img/Blue_Drumlin_Logo_500pxsq_whiteBG_Bold_D.png
-author: Tygh Walters
-description: Building on the web with Ruby on Rails
-show_downloads: false
-google_analytics:
-# for default social image
-defaults:
-  - scope:
-      path: ""
-    values:
-      image: /assets/img/Blue_Drumlin_Logo_500pxsq_whiteBG_Bold_D.png
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
 
- 
+title: Blue Drumlin
+email: # your-email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Building with Ruby on Rails.
+domain: bluedrumlin.com       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
+baseurl: # the subpath of your site, e.g. /blog
+url: https://bluedrumlin.com # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: bluedrumlin
+github_username:  LucidIndian
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
