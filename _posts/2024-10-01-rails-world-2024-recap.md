@@ -14,24 +14,39 @@ It happened by a chance interaction with the [IndieRails](https://www.indierails
 
 What a serendipity! I never win anything!! LFG!!! 
 
-Since that day and for the past several weeks I've been on an energizing journey to soak it all up while putting this good fortune to good use.
-
 I'll admit, I was a bit nervous `{self_doubt: 'Am I developer enough?'}` but overall feeling ready to show up and engage.
+
+Since that day and for the past several weeks I've been on an energizing journey to soak it all up while putting this good fortune to good use. What should I do? What can I do?
+
+### Process vs. outcome
 
 I can only control what I do (the process), not what happens (the outcome). 
 
 I committed to doing it all. Leaning into the conference as much as I could. Process orientation on 1,000%! How?:
 
+#### Before the conference
+
 - Made an [28-post thread on X](https://x.com/TyghWalters/status/1830667320378958222), one per day re: behind the scenes of my conference prep & perspective
 - Joined & participated in online Campfire discussions for attendees
 - Submitted a Lightning Talk "'The Rails Way' to Do Customer Service" - did not get accepted
 - Signed up for two pair-coding sessions one with Shopify dev and one with a Test Double dev
-- Introduced myself to many fellow attendees sitting nearby
+- Follow all the speakers and others on X
 - Read all the posts and clicked all the links
-- Completed the feedback survey
-- All the while continuing to build my own Rails apps
 
-You could say that instead of casually strolling along the long Rails ramp, I started jogging with intention.  
+#### During the conference
+
+- Never not in a session and early for both pair codings
+- Attended all day every day and both sponsored after-parties
+- Introduced myself to fellow attendees sitting nearby
+- Chatted with almost all the sponsor booths
+
+#### After the conference
+
+- Completed the feedback survey
+- launched this blog on Github Pages + Jekyll and
+- wrote this post!
+
+All the while continuing to build my own Rails apps. You could say that instead of casually strolling along the long Rails ramp, I started jogging with intention.  
 
 I'm still accelerating; moving faster towards proficiency and happiness while trying to repay the debt of gratitude I have.
 
@@ -41,13 +56,13 @@ I'm still accelerating; moving faster towards proficiency and happiness while tr
 
 In order to attend all the events, attendees were required to travel multi-kilometer distances between remote locations multiple times per day amongst big-city traffic. 
 
-Ubering everywhere gets expensive, public transit is usually confusing and indeterminate, and renting a car is another huge hassle. 
+Ubering everywhere gets expensive, public transit is usually confusing and indeterminate and renting a car is another huge hassle + $$$. 
 
 Rails World provided shuttles for some but I saw this as an opportunity to do it a simpler way and just walk everywhere. 
 
 Actually a win because:
 - Already enjoy walking, and I can walk fast
-- Saw Toronto up close - walked dozens of miles through various neighborhoods and districts, and to the shore of Lake Ontario
+- Saw Toronto up close - walked dozens of miles through various neighborhoods, and to the shore of Lake Ontario
 - Saved significant $ by skipping paid options 
 - Got excellent exercise 4 days in a row!
 - Took the UP train (Union station to Toronto Pearson International Airport)
