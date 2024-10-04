@@ -158,13 +158,15 @@ Not sure yet but the answer is slowly forming yet perpetually receding.
 
 Like you, I have a unique combination of perspectives, skills, and experiences. Some of mine are: football, exercise science, customer service, e-commerce, gardening, Rails, and creating bootstrapped businesses.
 
-At this stage, I feel like the best way for me to contribute, my "calling", may be to build a business, or several, with Ruby on Rails. The kind of apps that could become a Rails World sponsor some day. One that hires senior and early career Rails devs alike. 
+Also like you, I have a unique combination of "deficiencies". I am not a Ruby expert. I am not a 10x developer yet, I am not a math genius, and I am "not" a lot more. That's natural and we don't need to be everything to do anything. 
 
-One that could potentially IPO!?
+At this stage, I feel like the best way for me to contribute, my "calling", may be to build a business with Ruby on Rails. Build the kind of apps that could become Rails World sponsors some day. Apps that can hire the best senior and early career Rails devs alike.
 
-I'm going to do this regardless but I'm trying to do this first with Rails. 
+An app that could potentially IPO!?
 
-I'm testing what others say is true: that Rails is the best way for one person to test ideas fast and then to make them go farther. This is the core benefit that originally motivated me to choose Rails when I started learning web development years ago. I knew what I was *not* choosing.
+I'm going to do this (build & market apps) regardless and I'm trying to do this first with Rails. 
+
+I'm testing what "they" say: that Rails is the best way for one person to test ideas fast and then to make them go far. This is the core benefit that originally motivated me to choose Rails when I started learning web development years ago. I knew what I was *not* choosing and why.
 
 I'm going to build apps that can thrive after launch and long before going public.
 
