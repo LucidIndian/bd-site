@@ -27,6 +27,12 @@ baseurl: # the subpath of your site, e.g. /blog
 url: https://bluedrumlin.com # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: bluedrumlin
 github_username:  LucidIndian
+# To make the logo show up on social shares
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/bd_logo500pxsquare.png
 
 # Build settings
 theme: minima
