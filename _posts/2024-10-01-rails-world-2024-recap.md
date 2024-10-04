@@ -43,8 +43,8 @@ I committed to doing it all. Leaning into the conference as much as I could. Pro
 #### After the conference
 
 - Completed the feedback survey
-- launched this blog on Github Pages + Jekyll and
-- wrote this post!
+- Launched this blog on Github Pages + Jekyll and
+- Wrote this post!
 
 All the while continuing to build my own Rails apps. You could say that instead of casually strolling along the long Rails ramp, I started jogging with intention.  
 
@@ -54,9 +54,9 @@ I'm still accelerating; moving faster towards proficiency and happiness while tr
 
 ### Lodging, the venue, and parties are miles apart
 
-In order to attend all the events, attendees were required to travel multi-kilometer distances between remote locations multiple times per day amongst big-city traffic. 
+In order to attend all events attendees were required to travel multi-kilometer distances between remote locations multiple times per day amongst big-city traffic. 
 
-Ubering everywhere gets expensive, public transit is usually confusing and indeterminate and renting a car is another huge hassle + $$$. 
+Ubering everywhere gets expensive, public transit is usually confusing and indeterminate and renting a car is another huge hassle + more $$$. 
 
 Rails World provided shuttles for some but I saw this as an opportunity to do it a simpler way and just walk everywhere. 
 
@@ -162,7 +162,7 @@ At this stage, I feel like the best way for me to contribute, my "calling", may 
 
 One that could potentially IPO!?! 
 
-I'm going to do this regardless, but I'm trying to do this first in Rails. I'm testing what others say is true: that Rails is the best way for one person to test ideas fast and then to make them go farther. This is the core that originally moved me to choose Rails when I started my "learn to code" journey years ago.  
+I'm going to do this regardless but I'm trying to do this first with Rails. I'm testing what others say is true: that Rails is the best way for one person to test ideas fast and then to make them go farther. This is the core benefit that originally motivated me to choose Rails when I started learning web development years ago. I knew I was *not* choosing.
 
 I'm going to build apps that can thrive after launch and long before going public.
 
