@@ -18,9 +18,9 @@ Since that day and for the past several weeks I've been on an energizing journey
 
 I'll admit, I was a bit nervous `{self_doubt: 'Am I developer enough?'}` but ready to show up and engage.
 
-I can only control what I do, not what happens. 
+I can only control what I do (the process), not what happens (the outcome). 
 
-I committed to doing it all. Leaning into the conference as much as I could. How?:
+I committed to doing it all. Leaning into the conference as much as I could. Process on 1,000%! How?:
 
 - Made an [28-post thread on X](https://x.com/TyghWalters/status/1830667320378958222), one per day re: behind the scenes of my conference prep & perspective
 - Joined & participated in online Campfire discussions for attendees
@@ -40,7 +40,7 @@ I'm still accelerating; moving faster towards proficiency and happiness while tr
 
 Knowing I had two pair-coding sessions on Friday I spent the Thursday night reviewing my notes and planning. 
 
-I found two areas I was blocked in my personal projects that I thought would be a good 20-min task and went to sleep feeling prepared.
+I found two blocked areas in my personal projects that I thought would be good 20-min tasks and went to sleep feeling ready.
 
 On Friday morning, an hour before my first paring session, I lost connection to the event's WI-FI!
 
@@ -56,7 +56,7 @@ Actually a win because:
 
 I failed to resolve my confusion around the [shopify_app gem](https://github.com/Shopify/shopify_app). 
 
-One of my goals is to get a vanilla Rails app working as a Shopify app. Shopify created this gem for us but it appears it has recently become incompatible with Shopify's new and recommended "managed installation", at least I believe that it has!? This is my next focus. To bo continued...
+One of my goals is to get a vanilla Rails app working as a Shopify app. Shopify created this gem for us but it appears it has recently become incompatible with Shopify's new and recommended "managed installation", at least I believe that it has!? This is my next focus. To be continued...
 
 Actually a win because: 
 1. I learned why [Remix](https://remix.run/) and not [Rails](https://rubygems.org/gems/rails/versions) is the golden path to create a new Shopify app. Shopify owns Remix!
@@ -117,13 +117,13 @@ Actually a win because now I have more perceived agency, and responsibility. I t
     - Lake Ontario 
     - UP train
 - Inspired me to give back: [reviewed an open PR for the Rails Guides](https://github.com/rails/rails/pull/52951#issuecomment-2391916720)
--  Reignited my drive to build!
+-  Reignited my drive to build and not just tinker!
 
 What a great conference, thank you to all that made it happen!
 
 ## What's next?
 
-Not sure yet but it's slowly forming. 
+Not sure yet, the answer is slowly forming yet perpetually receding. 
 
 Like you, I have a unique combination of skills and experiences. Some of mine are: football, exercise science, customer service, e-commerce, gardening, Rails, and creating bootstrapped businesses.
 
@@ -133,8 +133,8 @@ One that could potentially IPO!?!
 
 I'm going to do this regardless, but I'm trying to do this first in Rails. I'm testing what others say is true: that Rails is the best way for one person to test ideas fast and then to make them go farther. This is the core that originally moved me to choose Rails when I started my "learn to code" journey years ago.  
 
-I'm going to build apps that can thrive after launch and long before IPO.
+I'm going to build apps that can thrive after launch and long before going public.
 
 Blue Drumlin will make beautiful and useful things with Ruby *and* Rails for real, live, grateful paying customers!
 
-Growing something that can fill a niche, fulfill me, and give back to the community that made it possible!
+Growing something that can fill a niche, fulfill me and give back to the community that made it possible!
