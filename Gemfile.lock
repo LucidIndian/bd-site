@@ -321,7 +321,7 @@ PLATFORMS
   x86_64-linux-musl
 
 DEPENDENCIES
-  github-pages (~> 232)
+  github-pages
   jekyll-remote-theme (~> 0.4.3)
   jekyll-seo-tag
   jekyll-timeago (~> 0.13.1)
