@@ -179,4 +179,3 @@ I'm going to build apps that can thrive after launch and long before going publi
 Blue Drumlin will make beautiful and useful things with Ruby *and* Rails for real, live, grateful paying customers!
 
 Growing something that can fill a niche, fulfill me and give back to the community that made it possible!
-
