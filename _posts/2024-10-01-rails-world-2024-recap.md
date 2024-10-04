@@ -38,28 +38,32 @@ I'm still accelerating; moving faster towards proficiency and happiness while tr
 
 ### No internet!?
 
-Knowing I had two pair coding sessions on Friday I spent the Thursday night reviewing my notes and planning what to discuss. I had attempted to find two areas I was blocked in my personal projects.
+Knowing I had two pair-coding sessions on Friday I spent the Thursday night reviewing my notes and planning. 
 
-On Friday morning, I lost connection to the event's WI-FI only hours before my pair coding session with Shopify!
+I found two areas I was blocked in my personal projects that I thought would be a good 20-min task and went to sleep feeling prepared.
 
-No worries, right? I can use my network internet. Well, my international plan throttled my usage down to 3G and it was crawling. 
+On Friday morning, an hour before my first paring session, I lost connection to the event's WI-FI!
+
+No worries, right? I can use my network internet. Well, my default plan throttled my international usage down to 3G and it was crawling. 
 
 Actually a win because:
-1. I was reminded how vital having a reliable source of personal internet can be! In the process of reviewing options
-2. I got paired with a gracious dev that knew something about it so we started troubleshooting and he even let me tether to his device
+1. I was reminded how vital having a reliable source of fast personal internet can be! In the process of reviewing options
+2. I got paired with a gracious dev that knew something about it so we started troubleshooting and he even let me tether to his device so we could continue the session
 
 ## Fails that were actually wins
 
 ### shopify_app gem
 
-I failed to resolve my confusion around the [shopify_app gem](https://github.com/Shopify/shopify_app). One of my goals is to get a vanilla Rails app working as a Shopify app. Shopify created this gem for us but it appears it has recently become incompatible with Shopify's new managed installation, at least I believe it has!? To bo continued...
+I failed to resolve my confusion around the [shopify_app gem](https://github.com/Shopify/shopify_app). 
+
+One of my goals is to get a vanilla Rails app working as a Shopify app. Shopify created this gem for us but it appears it has recently become incompatible with Shopify's new and recommended "managed installation", at least I believe that it has!? This is my next focus. To bo continued...
 
 Actually a win because: 
-1. I learned why Remix and not Rails is the golden path to create a new Shopify app. Shopify owns Remix!
-2. I learned how to prepare better for a pair-coding session. If I had localized or described my situation with more specificity, it may have led to more meaningful work and a breakthrough. Proper Preparation Prevents Poor Performance!
-3. I feel like I got solidly set on a personal quest to figure this out once and for all, to connect the dots for myself and others: How can we use Rails to write Shopify apps that work!? 
+1. I learned why [Remix](https://remix.run/) and not [Rails](https://rubygems.org/gems/rails/versions) is the golden path to create a new Shopify app. Shopify owns Remix!
+2. I learned how to prepare better for a pair-coding session. If I had localized or described my situation with more specificity, was able to replicate it live, it may have led to more meaningful work and a breakthrough. Proper Preparation Prevents Poor Performance!
+3. I feel like I got solidly sent on a personal quest to figure this out, once and for all! To connect the dots for myself and others: How can we use Rails to write Shopify apps that work!? 
 
-Making it easier for Rails devs to build for the largest Rails app in the world seems like a connection that needs to happen! This will be a future post.
+Making it easier for Rails devs to build for the largest Rails app in the world seems like a commonsense connection that needs to happen! This will be a future post.
 
 ### My dirty laptop screen! 
 
@@ -87,7 +91,9 @@ Actually a win because:
 
 ### Lost the idea that "solo traveling is not important"
 
-Actually a win because being OK or even rejuvenated by being alone occasionally is good! Put on your Oxygen mask before assisting others.
+Actually a win because being OK or even rejuvenated by being alone occasionally is good!
+
+Putting on my own Oxygen mask before assisting others.
 
 ### Lost the idea that I am not ready to build & contribute 
 
@@ -96,13 +102,12 @@ Actually a win because now I have more perceived agency, and responsibility. I t
 ## More Wins
 
 -  Met & talked with many friendly folks, including but not limited to: 
-    - Chris Oliver about his customer service
+    - Chris Oliver about his customer service approach
     - Andrea Formera about her Rails World talk
     - Adam McCrea about Judoscale at the Clio party
-    - Jeremy & Jess from IndieRails about many things
+    - Jeremy & Jess from IndieRails
     - Aaron Patterson about his closing keynote
     - Product Managers at Shopify
-
 - First time in Canada - Beaver tail and Poutine!
 - All the info & stories shared in the tracks and Lightning talks
 - Top quality merch & stickers acquired. And [Rails has a new store!](https://merch.rubyonrails.org/)
@@ -118,14 +123,18 @@ What a great conference, thank you to all that made it happen!
 
 ## What's next?
 
-Like you, I have a unique combination of skills and experiences. Some of mine are: football, exercise science, customer service, e-commerce, Rails, and creating bootstrapped businesses.
+Not sure yet but it's slowly forming. 
 
-At this stage, I feel like the biggest way, the best way for me to contribute, my "calling", may be to use these skills to build a  business, or several, with Ruby on Rails. One that could become a Rails World sponsor some day. One that could potentially IPO!? One that hires senior and early career Rails devs alike.
+Like you, I have a unique combination of skills and experiences. Some of mine are: football, exercise science, customer service, e-commerce, gardening, Rails, and creating bootstrapped businesses.
 
-I'm going to do this, but I want to do this in Rails, as another proof of concept, but to test what others say is true: that Rails is the best way for one person to test ideas and then to make them go farther.
+At this stage, I feel like the best way for me to contribute, my "calling", may be to use these skills to build a business, or several, with Ruby on Rails. The kind of apps that could become Rails World sponsors some day. One that hires senior and early career Rails devs alike. 
 
-I'm going to build an app can thrive after launch and before IPO.
+One that could potentially IPO!?! 
 
-I will use Blue Drumlin to make beautiful and useful things with Ruby & Rails for real paying customers!
+I'm going to do this regardless, but I'm trying to do this first in Rails. I'm testing what others say is true: that Rails is the best way for one person to test ideas fast and then to make them go farther. This is the core that originally moved me to choose Rails when I started my "learn to code" journey years ago.  
 
-Growing something that can fulfill me and give back to the community that made it possible!
+I'm going to build apps that can thrive after launch and long before IPO.
+
+Blue Drumlin will make beautiful and useful things with Ruby *and* Rails for real, live, grateful paying customers!
+
+Growing something that can fill a niche, fulfill me, and give back to the community that made it possible!
