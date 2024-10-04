@@ -164,7 +164,7 @@ One that could potentially IPO!?
 
 I'm going to do this regardless but I'm trying to do this first with Rails. 
 
-I'm testing what others say is true: that Rails is the best way for one person to test ideas fast and then to make them go farther. This is the core benefit that originally motivated me to choose Rails when I started learning web development years ago. I knew I was *not* choosing.
+I'm testing what others say is true: that Rails is the best way for one person to test ideas fast and then to make them go farther. This is the core benefit that originally motivated me to choose Rails when I started learning web development years ago. I knew what I was *not* choosing.
 
 I'm going to build apps that can thrive after launch and long before going public.
 
