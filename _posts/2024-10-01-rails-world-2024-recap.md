@@ -4,7 +4,7 @@ title:  "My Rails World 2024 Challenges, Fails, Losses & Wins"
 tags: Rails coding
 ---
 
-Sorry, the title is misleading. Here, there are ==only wins==.
+Sorry, the title is misleading. Here, there are _only wins_.
 
 ## Hello (Rails) world
 
