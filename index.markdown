@@ -4,3 +4,11 @@
 
 layout: home
 ---
+
+## Blue Drumlin builds
+- A framework for e-commerce customer service - SlopeCS
+- A location-based gardening journal - GeoGardening
+- Better email validation & verification - Email200
+- A project management tool for homeowners - DIY-er
+
+## Posts
