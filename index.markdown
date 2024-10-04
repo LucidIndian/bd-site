@@ -4,7 +4,7 @@
 title: Blue Drumlin
 layout: home
 ---
-![Blue Drumlin Logo](/assets/bd_logo500pxsquare.png)
+![Blue Drumlin Logo](/assets/bd_logo_280pxsquare.png)
 
 ## Blue Drumlin builds
 - A framework for e-commerce customer service - [SlopeCS](https://slopecs.com/)
