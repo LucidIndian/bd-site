@@ -1,6 +1,10 @@
 remote_theme: pages-themes/minimal@v0.2.0
+# https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll#plugins
 plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
+  - jekyll-remote-theme # add this line to the plugins list if you already have one
+  - jekyll-seo-tag
+domain: bluedrumlin.com  # if you want to force HTTPS, specify the domain without the http, e.g. example.com
+url: https://bluedrumlin.com  # the base hostname and protocol for my site
 title: Blue Drumlin
 logo: /assets/img/Blue_Drumlin_Logo_500pxsq_whiteBG_Bold_D.png
 author: Tygh Walters

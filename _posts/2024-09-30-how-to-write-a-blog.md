@@ -6,6 +6,6 @@ tag: coding
 
 # Welcome
 
-**Hello world**, this is my first Jekyll blog post.
+**Hello world**, this is my first [Jekyll](https://jekyllrb.com/) blog post.
 
 I hope you like it!
