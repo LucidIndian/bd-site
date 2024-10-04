@@ -147,22 +147,24 @@ I thought I could do a lot before, but now, almost everything feels withing reac
     - Product Managers at Shopify
 - First time in Canada - Beaver tail and Poutine!
 - All the info & stories shared in the tracks and Lightning talks
-- Top quality merch & stickers acquired. And [Rails has a new store!](https://merch.rubyonrails.org/)
--  Reignited my drive to build & ship (go from 0 to 1) and not just tinker (Stay at 0)!
+- Top quality merch & stickers acquired directly from Rails World and from sponsors. Did you know [Rails has a new store](https://merch.rubyonrails.org/)?
+-  Reignited my drive to build & ship (going from 0 to 1) and not just tinkering!
 
-What an excellent conference and a wonderful experience! Thank you to all that made it happen! :joy:
+What an excellent conference and a wonderful experience! Thank you to all that made it happen!
 
 ## What's next?
 
-Not sure yet, the answer is slowly forming yet perpetually receding. 
+Not sure yet but the answer is slowly forming yet perpetually receding. 
 
-Like you, I have a unique combination of skills and experiences. Some of mine are: football, exercise science, customer service, e-commerce, gardening, Rails, and creating bootstrapped businesses.
+Like you, I have a unique combination of perspectives, skills, and experiences. Some of mine are: football, exercise science, customer service, e-commerce, gardening, Rails, and creating bootstrapped businesses.
 
-At this stage, I feel like the best way for me to contribute, my "calling", may be to use these skills to build a business, or several, with Ruby on Rails. The kind of apps that could become Rails World sponsors some day. One that hires senior and early career Rails devs alike. 
+At this stage, I feel like the best way for me to contribute, my "calling", may be to build a business, or several, with Ruby on Rails. The kind of apps that could become a Rails World sponsor some day. One that hires senior and early career Rails devs alike. 
 
-One that could potentially IPO!?! 
+One that could potentially IPO!?
 
-I'm going to do this regardless but I'm trying to do this first with Rails. I'm testing what others say is true: that Rails is the best way for one person to test ideas fast and then to make them go farther. This is the core benefit that originally motivated me to choose Rails when I started learning web development years ago. I knew I was *not* choosing.
+I'm going to do this regardless but I'm trying to do this first with Rails. 
+
+I'm testing what others say is true: that Rails is the best way for one person to test ideas fast and then to make them go farther. This is the core benefit that originally motivated me to choose Rails when I started learning web development years ago. I knew I was *not* choosing.
 
 I'm going to build apps that can thrive after launch and long before going public.
 
