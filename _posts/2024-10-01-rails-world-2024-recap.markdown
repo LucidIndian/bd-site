@@ -1,6 +1,8 @@
+---
 layout: post
 title:  "My Rails World 2024 Challenges, Fails, Losses & Wins"
-tags: Rails coding
+categories: rails coding
+tags:
 ---
 
 Sorry, the title is misleading. Here, there are _only wins_.
