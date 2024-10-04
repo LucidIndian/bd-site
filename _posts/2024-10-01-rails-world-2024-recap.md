@@ -36,19 +36,36 @@ I'm still accelerating; moving faster towards proficiency and happiness while tr
 
 ## Challenges that were actually wins
 
-### No internet!?
+### Lodging, the venue, and parties are miles apart
 
-Knowing I had two pair-coding sessions on Friday I spent the Thursday night reviewing my notes and planning. 
+Attendees were required to travel multi-kilometer distances multiple times per day during busy traffic. 
 
-I found two blocked areas in my personal projects that I thought would be good 20-min tasks and went to sleep feeling ready.
+Ubering everywhere gets expensive and indeterminate, public transit takes a long time, renting a car ($$)? 
 
-On Friday morning, an hour before my first paring session, I lost connection to the event's WI-FI!
-
-No worries, right? I can use my network internet. Well, my default plan throttled my international usage down to 3G and it was crawling. 
+Rails World provided shuttles for some but I saw this as an opportunity to do it a simpler way and just walk everywhere. 
 
 Actually a win because:
-1. I was reminded how vital having a reliable source of fast personal internet can be! In the process of reviewing options
-2. I got paired with a gracious dev that knew something about it so we started troubleshooting and he even let me tether to his device so we could continue the session
+- I already enjoy walking, and I can walk fast
+- Saw Toronto up close - walked dozens of miles through various neighborhoods and districts
+- Saved $ on paid options 
+- Got excellent exercise 4 days in a row!
+- Walked to the shore of Lake Ontario
+- Took the UP train (Union station to Toronto Pearson International Airport)
+
+It was a great call. There were many other people walking all the major streets almost all day long.
+
+### No internet!?
+
+Knowing I had two pair-coding sessions on Friday I spent the Thursday night reviewing my notes and planning. I found two blocked areas in my personal projects that I thought would be good 20-min tasks and went to sleep feeling ready.
+
+The next morning, an hour before my first paring session, I lost the event's Wi-Fi! It was connected but no data was flowing!?
+
+No worries, right, I can use my phone's network internet? Yes, but it happened that my provider throttled my international data usage down to 3G and it was crawling... What was I going to do?!
+
+Actually a win because:
+1. It was a good ice breaker for the pairing session
+2. I was reminded how vital having a reliable source of fast personal internet can be! In the process of reviewing options
+3. I got paired with a gracious dev that knew something about it so we started troubleshooting and he even let me tether to his device so we could continue the session
 
 ## Fails that were actually wins
 
@@ -111,11 +128,6 @@ Actually a win because now I have more perceived agency, and responsibility. I t
 - First time in Canada - Beaver tail and Poutine!
 - All the info & stories shared in the tracks and Lightning talks
 - Top quality merch & stickers acquired. And [Rails has a new store!](https://merch.rubyonrails.org/)
-- Saw Toronto: 
-    - walked dozens of miles through various neighborhoods and districts
-    - three levels of Shopify office craziness 
-    - Lake Ontario 
-    - UP train
 - Inspired me to give back: [reviewed an open PR for the Rails Guides](https://github.com/rails/rails/pull/52951#issuecomment-2391916720)
 -  Reignited my drive to build and not just tinker!
 
