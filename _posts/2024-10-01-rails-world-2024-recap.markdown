@@ -2,6 +2,7 @@
 layout: post
 title:  "My Rails World 2024 Challenges, Fails, Losses & Wins"
 categories: rails coding
+permalink: /2024/10/01/rails-world-2024-recap.html
 tags:
 image: /assets/IMG_6580.jpeg
 #   path: /assets/IMG_6580.jpeg
@@ -10,7 +11,7 @@ image: /assets/IMG_6580.jpeg
 #   alt: My Rails World Badge
 ---
 <!-- ![Rails World badge](/assets/IMG_6580.jpeg) -->
-## Hello (Rails) world
+## Hello, (Rails) world
 
 My name is Tygh Walters, and this is my story of having the exquisite privilege to unexpectedly attend [Rails World](https://rubyonrails.org/world/) 2024 in Toronto, Canada! 
 
