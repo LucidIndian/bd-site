@@ -131,15 +131,15 @@ Putting on my own Oxygen mask before assisting others.
 
 Actually a win because now I have more perceived agency, and responsibility. 
 
- Already [reviewed an open PR for the Rails Guides](https://github.com/rails/rails/pull/52951#issuecomment-2391916720).
+As evidence, I just [reviewed an open PR for the Rails Guides](https://github.com/rails/rails/pull/52951#issuecomment-2391916720), something I would have previously avoided.
 
-I thought I could do a lot before, but now, almost anything feels possible!
+I thought I could do a lot before, but now, almost everything feels withing reach.
 
 ## More Wins
 
 -  Met & talked with many friendly folks, including but not limited to: 
     - Chris Oliver about his customer service approach
-    - Andrea Formera about her Rails World talk
+    - Andrea Fomera about her Rails World talk
     - Adam McCrea about Judoscale at the Clio party
     - Jeremy & Jess from IndieRails
     - Gannon McGibbon, a Shopify dev
