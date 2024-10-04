@@ -4,25 +4,25 @@ title:  "My Rails World 2024 Challenges, Fails, Losses & Wins"
 tags: Rails coding
 ---
 
-Sorry, the title is misleading. *Here*, there are only wins.
+Sorry, the title is misleading. Here, there are _only wins_.
 
 ## Hello (Rails) world
 
 My name is Tygh Walters, and this is my story of having the exquisite privilege to unexpectedly attend [Rails World](https://rubyonrails.org/world/) 2024 in Toronto, Canada! 
 
-It happened by a chance interaction with the IndieRails podcast account on social media. I answered a question and won a ticket sponsored by Buzzsprout to only the second Rails World which had sold out (in less than an hour) months before.
+It happened by a chance interaction with the [IndieRails](https://www.indierails.com/) podcast account on social media. I answered a question and won a ticket sponsored by [Buzzsprout](https://www.buzzsprout.com/) to only the second Rails World which had sold out (in less than an hour) months before.
 
 What a serendipity! I never win anything!! LFG!!! 
 
-Since that day and for the past several weeks I've been on an energizing journey to soak it all up and put this fortune to good use! 
+Since that day and for the past several weeks I've been on an energizing journey to soak it all up and put this fortune to good use.
 
-I'll admit, I was a bit nervous `{self_doubt: 'Am I developer enough?'}` but ready to show up and engage!
+I'll admit, I was a bit nervous `{self_doubt: 'Am I developer enough?'}` but ready to show up and engage.
 
-I can only control what I do and think, not what happens. 
+I can only control what I do, not what happens. 
 
-I committed to doing it all. Leaning into the conference as much as I could, before, during and after. How?:
+I committed to doing it all. Leaning into the conference as much as I could. How?:
 
-- Made an [28-post thread on X](https://x.com/TyghWalters/status/1830667320378958222), one per day re: behind the scenes of my conference prep
+- Made an [28-post thread on X](https://x.com/TyghWalters/status/1830667320378958222), one per day re: behind the scenes of my conference prep & perspective
 - Joined & participated in online Campfire discussions for attendees
 - Submitted a Lightning Talk "'The Rails Way' to Do Customer Service" - did not get accepted
 - Signed up for two pair-coding sessions one with Shopify dev and one with a Test Double dev
@@ -30,7 +30,7 @@ I committed to doing it all. Leaning into the conference as much as I could, bef
 - Read all the posts and clicked all the links
 - Completed the feedback survey
 
-You could say that instead of casually strolling along, I started jogging with intention up the long Rails ramp.  
+You could say that instead of casually strolling along the long Rails ramp, I started jogging with intention.  
 
 I'm still accelerating; moving faster towards proficiency and happiness while trying to repay the debt of gratitude I have.
 
