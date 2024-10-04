@@ -4,7 +4,7 @@ title:  "My Rails World 2024 Challenges, Fails, Losses & Wins"
 tags: Rails coding
 ---
 
-Sorry, the title is misleading. Here, there are _only wins_.
+Sorry, the title is misleading. Here, there are ==only wins==.
 
 ## Hello (Rails) world
 
@@ -114,7 +114,11 @@ Putting on my own Oxygen mask before assisting others.
 
 ### Lost the idea that I am not ready to build & contribute 
 
-Actually a win because now I have more perceived agency, and responsibility. I thought I could do a lot before, but now, almost anything is possible!
+Actually a win because now I have more perceived agency, and responsibility. 
+
+ Already [reviewed an open PR for the Rails Guides](https://github.com/rails/rails/pull/52951#issuecomment-2391916720).
+
+I thought I could do a lot before, but now, almost anything feels possible!
 
 ## More Wins
 
@@ -123,15 +127,15 @@ Actually a win because now I have more perceived agency, and responsibility. I t
     - Andrea Formera about her Rails World talk
     - Adam McCrea about Judoscale at the Clio party
     - Jeremy & Jess from IndieRails
+    - Gannon McGibbon, a Shopify dev
     - Aaron Patterson about his closing keynote
     - Product Managers at Shopify
 - First time in Canada - Beaver tail and Poutine!
 - All the info & stories shared in the tracks and Lightning talks
 - Top quality merch & stickers acquired. And [Rails has a new store!](https://merch.rubyonrails.org/)
-- Inspired me to give back: [reviewed an open PR for the Rails Guides](https://github.com/rails/rails/pull/52951#issuecomment-2391916720)
--  Reignited my drive to build and not just tinker!
+-  Reignited my drive to build & ship (go from 0 to 1) and not just tinker (Stay at 0)!
 
-What a great conference, thank you to all that made it happen!
+What an excellent conference and a wonderful experience! Thank you to all that made it happen! :joy:
 
 ## What's next?
 
