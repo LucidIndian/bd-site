@@ -1,6 +1,6 @@
 ## Blue Drumlin
 
-Welcome to Blue Drumlin, a software company building with Ruby on Rails.
+Welcome to Blue Drumlin, a cool software company building with Ruby on Rails.
 
 This repo stores the code for Blue Drumlin's site & blog by Jekyll and hosted on Github Pages.
 
