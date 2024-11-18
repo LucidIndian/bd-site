@@ -10,11 +10,10 @@ image: /assets/bd_logo500pxsquare.png
 #   width: 
 #   alt: 
 ---
-# Shopify Apps on Rails: A Beginner's Journey Through Confusion
 
 I’m a newcomer. My perspective is naïve, and I’m uninformed and ignorant in many ways. Yet, in my ignorance, I’ve encountered a great confusion—a puzzle about Rails and Shopify I’ve become determined to solve. 
 
-I’ve never worked at Shopify, I've built 0 Shopify apps, and I’ve only been inside their building once. I might have this all wrong, but this post is the perspective of a curious outside observer. Hopefully, it’s at least interesting or entertaining! ;)
+I’ve never worked at Shopify, built 0 Shopify apps, and I’ve only been inside their building once. I might have this all wrong, but this post is the perspective of a curious outside observer. Hopefully, it’s at least interesting or entertaining! ;)
 
 ---
 
