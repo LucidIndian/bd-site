@@ -1,8 +1,8 @@
 # Shopify Apps on Rails: A Beginner's Journey Through Confusion
 
-I’m a newcomer. My perspective is naïve, and I’m uninformed and ignorant in many ways. Yet, in my ignorance, I’ve encountered a great confusion—a puzzle I’ve become determined to solve.
+I’m a newcomer. My perspective is naïve, and I’m uninformed and ignorant in many ways. Yet, in my ignorance, I’ve encountered a great confusion—a puzzle about Rails and Shopify I’ve become determined to solve. 
 
-I’ve never worked at Shopify, I've built 0 Shopify apps, and I’ve only been inside their building once. I'm saying I might have this all wrong, but here’s the perspective of a curious outside observer. Hopefully, it’s at least interesting or entertaining! ;)
+I’ve never worked at Shopify, I've built 0 Shopify apps, and I’ve only been inside their building once. I might have this all wrong, but this post is the perspective of a curious outside observer. Hopefully, it’s at least interesting or entertaining! ;)
 
 ---
 
@@ -12,7 +12,7 @@ My first experience with programming (Matlab) was in 2010 and my first web dev i
 
 From my very first exposure to Rails, I noticed Rails’ connection to its biggest adopters. GitHub, Basecamp, and, most notably, Shopify are often cited as the giants who’ve thrived with Rails, the examples of what is possible.
 
-At Rails World 2024, Shopify devs shared an incredible statistic: **hundreds of Rails apps power Shopify**. While this number has decreased from what it once was, it’s still amazing. These apps seem to form a network of interconnected systems, each managing a slice of the Shopify experience. 
+At Rails World 2024, Shopify devs shared an incredible statistic: **hundreds of Rails apps power Shopify**. While this number has decreased from what it once was, it’s still amazing. These apps seem to form a hidden network of interconnected systems, each managing a slice of the Shopify experience. 
 
 Shopify emphasized that managing large codebases is less about the language or framework and more about organizational culture, decision-making, and communication. It was a refreshing perspective that showed Rails remains deeply integrated into Shopify's DNA.
 
@@ -44,7 +44,7 @@ But when I began exploring how to create a Shopify app, that’s when the discou
 
 ## Where’s Rails in Shopify’s App Ecosystem?
 
-Shopify has excellent developer documentation. However, after spending many hours reading it, it became obvious that while Rails is mentioned and supported, **it’s clearly not the preferred path**. Instead, Shopify heavily promotes **[Remix](https://remix.run/)**.
+Shopify has excellent [developer documentation](https://shopify.dev/docs). However, after spending many hours reading it, it became obvious that while Rails is mentioned and supported, **it’s clearly not the preferred path**. Instead, Shopify heavily prefers **[Remix](https://remix.run/)**.
 
 At Rails World 2024, I finally learned why. Remix became a Shopify-owned framework in 2022, so it makes sense they’d highlight their own tool. But as a new Rails developer, I had never even heard of Remix before diving into Shopify’s ecosystem.
 
@@ -54,47 +54,49 @@ At Rails World 2024, I finally learned why. Remix became a Shopify-owned framewo
 
 Shopify provides several Rails tools, including:
 
-- The **official[ Ruby app template](https://github.com/Shopify/shopify-app-template-ruby)**
-- The **[shopify_app gem](https://github.com/Shopify/shopify_app)**
-- The **[shopify_api gem](https://github.com/Shopify/shopify-api-ruby)**
+- The official[ Ruby app template](https://github.com/Shopify/shopify-app-template-ruby)
+- The [shopify_app gem](https://github.com/Shopify/shopify_app)
+- The [shopify_api gem](https://github.com/Shopify/shopify-api-ruby)
 
 As great as they may be, today, some are outdated. For example, the official Ruby app template is still for Rails 7.1, while Rails 7.2 and then 8.0 came out. 
 
-A helpful developer submitted an issue about this, leading to Shopify to create a wiki on replacing React with Stimulus for a modern Rails 8 app. I tested this approach and, after some initial confusion and errors, managed to get my app working de-React-ed. Still, it was clear that Rails apps, and especially Rails apps without React are treated as second-class options compared to Remix in Shopify’s ecosystem.
+In February 2024, a helpful dev submitted an issue about this, "[Rails 8, Hotwire, Stimulus, no react](https://github.com/Shopify/shopify-app-template-ruby/issues/122)" leading to Shopify to create a wiki, "[Replacing React frontend with Stimulus](https://github.com/Shopify/shopify-app-template-ruby/wiki/Replacing-React-frontend-with-Stimulus)". I tested this approach and, after some initial confusion and errors, managed to get my app working de-React-ed. Still, it was clear that Rails apps, and especially Rails apps without React are treated as second-class options compared to Remix in Shopify’s ecosystem.
 
 ---
 
 ## My Hope for Rails and Shopify
 
-Here’s what I hope to see: modern, standard ruby on Rails apps treated as first-class options alongside Remix. Specifically, I’d love to see:
+Here’s what I hope to see: modern, standard Ruby on Rails apps treated as first-class options alongside Remix. Specifically, I’d love to see:
 
 1. **Parity in Documentation and Support**  
    Shopify’s Remix documentation is top-notch. If Rails had the same level of depth, quality, and examples, it could lower the barrier for Rails developers to create Shopify apps.
 
 2. **Stronger Recruitment for Rails Developers**  
-   Since Shopify is built on many Rails apps, supporting the framework helps the company in the long run. By enhancing the Rails developer experience for building Shopify apps, they could inspire more devs to create Shopify apps with Rails. Eventually, these apps will need to hire! Some of these developers might eventually join a Shopify app or Shopify itself to work on its Rails codebase.
+   Since Shopify is built on many Rails apps, supporting the framework helps the company in the long run. By enhancing the Rails developer experience for building Shopify apps, they could inspire more devs to create Shopify apps with Rails. Eventually, these apps will need to hire. These Rails devs might eventually join a Shopify app or Shopify itself to work on its Rails codebase.
 
 ---
 
 ## Why This Matters to (People Like) Me
 
-As a Rails learner, I don’t want to juggle too many frameworks like Remix or React. It feels like a steep on-ramp for someone like me already, an advanced beginner trying to make a real-world app.
+As a Rails learner, I don’t want to juggle too many frameworks like Remix or React. It already feels like a steep on-ramp for someone like me, an advanced beginner trying to make a real-world app.
 
 Beyond my personal struggles, this is more about alignment. 
 
-Shopify seems to advocate for **less complexity** and the updated Rails way—less JavaScript, less complexity—could be a fantastic match for Shopify’s ethos.
+Like Rails, Shopify seems to advocate for **less complexity**.
 
 In, [General best practices for app performance](https://shopify.dev/docs/apps/build/performance/general-best-practices#reduce-your-dependency-on-external-frameworks-and-libraries), Shopify clearly states what I believe Rails is saying as well:   
 - "If you need to use JavaScript, consider avoiding introducing third-party frameworks, libraries, and dependencies"
 - "...use native browser features and modern DOM APIs whenever possible."
 - "Frameworks such as React, Angular,... Vue,... jQuery have significant performance costs" 
 
+The updated Rails way—less JavaScript, less complexity—could be a fantastic match for Shopify’s ethos.
+
 ---
 
 ## A Beginner’s Journey to the Outer Edge
 
-This journey into Shopify apps represents my first attempt into the “outer edge” of development. For years, I followed rigid tutorials with definitive outcomes. Now, I’m navigating the unknown, trying to solve problems that aren’t predefined. 
+This path into Shopify apps represents my first attempt into the “outer edge” of development. For years, I followed rigid tutorials with definitive outcomes. Now, I’m navigating the unknown, trying to solve problems that aren’t predefined. 
 
-Shopify’s ecosystem has inspired me to embrace this mystery, share my findings, and grow as a developer. My hope is that by voicing these experiences, we can collectively improve the Rails developer journey for Shopify apps.
+Rails and Shopify have inspired me to embrace this mystery, share my findings, and grow as a developer. My hope is that by voicing these experiences, we can collectively improve the Rails developer journey for Shopify apps.
 
-the next focus is to build, design, and launch a standard Rails app that is compatible as a Shopify app on the app store. More to come soon!
+The next focus is to build, design, and launch a standard Rails app that is compatible as a Shopify app on the app store. More to come soon!
