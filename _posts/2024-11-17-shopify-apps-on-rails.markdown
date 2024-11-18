@@ -1,3 +1,15 @@
+---
+layout: post
+title:  "Shopify Apps on Rails: A Beginner's Journey Through Confusion"
+categories: rails coding
+# permalink: /2024/11/01/rails-world-2024-recap.html
+tags:
+image: /assets/bd_logo500pxsquare.png
+#   path: 
+#   height: 300
+#   width: 
+#   alt: 
+---
 # Shopify Apps on Rails: A Beginner's Journey Through Confusion
 
 I’m a newcomer. My perspective is naïve, and I’m uninformed and ignorant in many ways. Yet, in my ignorance, I’ve encountered a great confusion—a puzzle about Rails and Shopify I’ve become determined to solve. 
