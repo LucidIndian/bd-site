@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Shopify Apps on Rails?: A Beginner's Journey Through Confusion"
+title:  "Shopify Apps on Rails?"
 categories: rails coding
 # permalink: /2024/11/01/rails-world-2024-recap.html
 tags:
@@ -39,19 +39,19 @@ Shopify’s investment in Rails is clear:
 - The company hires some of the most talented Ruby and Rails developers, solving problems at the highest scale  
 - Rails users, like me, benefit immensely from Shopify’s innovations trickling down into the open-source framework
 
-Even Shopify’s CEO, Tobi Lütke, is a Rails enthusiast. A former core contributor to the framework, his admiration for Rails was evident during the [Rails World 2024 fireside chat](https://www.youtube.com/watch?v=zPBbHu-BKpQ) with DHH (David Heinemeier Hansson) and Matz (Yukihiro Matsumoto).
+Even Shopify’s co-founder & CEO, Tobi Lütke, is a Rails enthusiast. A former core contributor to the framework, his admiration for Rails was evident during the [Rails World 2024 fireside chat](https://www.youtube.com/watch?v=zPBbHu-BKpQ) with DHH (David Heinemeier Hansson) and Matz (Yukihiro Matsumoto).
 
-From the outside, it feels like Shopify, Ruby, and Rails are deeply intertwined and thriving together.
+From the outside, it feels like Shopify, Ruby, and Rails are deeply intertwined, thriving together.
 
 ---
 
 ## The Seed of My Confusion
 
-My strong interest in Shopify stems from my work with [SellerSmile](https://sellersmile.com), the customer service agency I co-founded nearly a decade ago. We’ve supported dozens of Shopify merchants and will continue to do so for years to come.
+My interest in Shopify stems from my work with [SellerSmile](https://sellersmile.com), the customer service agency I co-founded nearly a decade ago. We’ve supported dozens of Shopify merchants and will continue to do so for years to come.
 
-I wanted to deepen this connection by building a Shopify app with Rails. My goal was to create something useful for my team, like an app that helps merchants automate their shipping policies—a feature I noticed was missing from Shopify’s admin tools.
+I wanted to build a Shopify app in the framework I knew, with Rails. My goal was to create something useful for my team.
 
-But when I began exploring how to create a Shopify app, Rails was hard to find, and that’s when the discouraged confusion started.
+Though, when I began exploring how to create a Shopify app, Rails was hard to find, and that’s when the discouraged confusion started.
 
 ---
 
@@ -91,9 +91,9 @@ Here’s what I hope to see: modern, standard Ruby on Rails apps treated as firs
 
 ## Why This Matters to (People Like) Me
 
-As a Rails learner, it's tough enough. I don’t want to juggle other unrelated frameworks like Remix or React. It already feels like a steep on-ramp for someone like me, an advanced beginner trying to make a real-world app.
+As a Rails learner, it already feels like a steep on-ramp. I don’t want to learn and juggle more frameworks like Remix or React. 
 
-Beyond my personal struggles, this is more about alignment. 
+Beyond my personal struggles, this is more about philosophical alignment. 
 
 Like Rails, Shopify seems to advocate for **less complexity**.
 
@@ -102,7 +102,7 @@ In their article, [General best practices for app performance](https://shopify.d
 - "...use native browser features and modern DOM APIs whenever possible."
 - "Frameworks such as React, Angular,... Vue,... jQuery have significant performance costs" 
 
-The updated Rails way—less JavaScript, less complexity—could be a fantastic match for Shopify’s ethos.
+Rails 8 could be a fantastic match for Shopify’s ethos, requiring/relying on fewer third-party frameworks.
 
 ---
 
