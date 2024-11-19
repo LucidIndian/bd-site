@@ -11,23 +11,21 @@ image: /assets/bd_logo500pxsquare.png
 #   alt: 
 ---
 
-I’m a newcomer. My perspective is naïve. I’m uninformed and ignorant. Yet, in my ignorance, I’ve encountered a peculiar confusion about Rails and Shopify I’ve become determined to understand. 
+I’m a newcomer to Rails. My perspective is naïve. I’m uninformed and ignorant. Yet, in my ignorance, I’ve encountered a peculiar confusion about Rails and Shopify I’ve become determined to understand. 
 
-After writing my [Rails World 2024 Recap](https://bluedrumlin.com/2024/10/01/rails-world-2024-recap.html), I wanted to write more on why it isn't easier to build Shopify apps using Ruby on Rails.
+After attending my first web dev conference and writing my [Rails World 2024 Recap](https://bluedrumlin.com/2024/10/01/rails-world-2024-recap.html), I wanted to share more on what I've learned trying to build a Shopify app with Ruby on Rails 8, and especially, why it is not easier to do so.
 
-I’ve never worked at Shopify and I’ve only been inside their building once. I could have this all wrong, but this is the current perspective of a curious outside observer. Hopefully, it’s at least interesting or entertaining! ;)
+I’ve never worked at Shopify and I’ve only been inside their building once. I could have this all backwards, but this is the current perspective of a curious, interested outside observer. Hopefully, it’s at least entertaining! ;)
 
 ---
 
 ## My Programming and Rails Context
 
-My first experience with programming (Matlab) was in 2010 and my first web intro (HTML and CSS) happened in 2012. I started learning Rails 6 in 2019.
+My first experience with programming (Matlab) was in 2010. My first web intro (HTML and CSS) happened in 2012. I started learning JavaScript and Rails 6 in 2019.
 
-From my very first exposure to Rails, the connection between Rails and its biggest adopters, Basecamp, GitHub, and, most notably, Shopify, were obvious. These companies are often cited as the big and successful examples that succeed on Rails, an demonstration of what is possible with the framework.
+From my very first exposure to Rails, the connection between Rails and its biggest adopters, Basecamp, GitHub, and, most notably, Shopify, were obvious. These companies are often cited as the big and successful examples that succeed, an demonstration of what is possible with the framework.
 
-At Rails World 2024, I heard a Shopify dev share an incredible fact: **hundreds of Rails apps power Shopify**. While this number has decreased from what it once was, it’s still amazing. These Rails apps seem to form a hidden network of interconnected systems, each managing a slice of the Shopify experience. 
-
-Shopify emphasized that managing large codebases is less about the language or framework and more about organizational culture, decision-making, and communication. This was a refreshing perspective that showed Shopify remains dedicated to Rails, and they're not buying into notions that "ability to scale" is one of the weaknesses of Rails.
+At Rails World 2024, I heard a Shopify dev share an incredible fact: **hundreds of Rails apps power Shopify**. While this number has decreased from what it once was, it’s still shocking to me. These hundreds of Rails apps seem to form a hidden network of interconnected systems, each managing a slice of the Shopify experience for shoppers and users. 
 
 ---
 
@@ -41,6 +39,8 @@ Shopify’s investment in Rails is clear:
 
 Even Shopify’s co-founder & CEO, Tobi Lütke, is a Rails enthusiast. A former core contributor to the framework, his admiration for Rails was evident during the [Rails World 2024 fireside chat](https://www.youtube.com/watch?v=zPBbHu-BKpQ) with DHH (David Heinemeier Hansson) and Matz (Yukihiro Matsumoto).
 
+Further, Shopify emphasized at RW24 that struggles with managing large codebases is less about the language or framework and more about organizational culture, decision-making, and communication. This refreshing perspective hints that Shopify remains dedicated to Rails and they're not convinced that "scalability" is an insurmountable, inherent weaknesses of Rails itself.
+
 From the outside, it feels like Shopify, Ruby, and Rails are deeply intertwined, thriving together.
 
 ---
@@ -49,9 +49,13 @@ From the outside, it feels like Shopify, Ruby, and Rails are deeply intertwined,
 
 My interest in Shopify stems from my work with [SellerSmile](https://sellersmile.com), the customer service agency I co-founded nearly a decade ago. We’ve supported dozens of Shopify merchants and will continue to do so for years to come.
 
-I wanted to build a Shopify app in the framework I knew, with Rails. My goal was to create something useful for my team.
+I wanted to build a Shopify app in the only way I knew, Rails. My goal was to create something useful for my customer service team.
 
-Though, when I began exploring how to create a Shopify app, Rails was hard to find, and that’s when the discouraged confusion started.
+When I began studying how to create a Shopify app, Rails was there but hard to find, and that’s when the discouraged confusion set in.
+
+- Do I have to learn React in order to use Rails to build a Shopify App?
+- What is Remix and should I learn that instead of React?
+- Am I making this too hard on myself by trying to do it "the simple way" (without React) in Rails?
 
 ---
 
