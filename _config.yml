@@ -22,7 +22,7 @@ title: Blue Drumlin
 email: # your-email@example.com
 author: Tygh Walters
 description: >- # this means to ignore newlines until "baseurl:"
-  Building with [Ruby on Rails](https://rubyonrails.org/).
+  Building with Ruby on Rails.
 domain: bluedrumlin.com  # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
 baseurl: # the subpath of your site, e.g. /blog
 url: https://bluedrumlin.com # the base hostname & protocol for your site, e.g. http://example.com
