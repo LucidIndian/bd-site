@@ -51,16 +51,16 @@ With two apps deployed for months, I'm feeling good about life, then the bots ar
 - 31st - Bot activity first discovered from Postmark alerting me to my monthly email quota!
 #### January, 2025 
 - 1st - Start studying security and anti-bot tactics. Require email confirmation to access account. 
-- 3rd - Disable sign ups and sessions
+- 3rd - Disable sign ups and sessions. Add Rails-native rate limiting and paranoid Devise messaging.
 - 11th - Add DMARC management in Cloudflare
 - 14th - Improve email validation with Ruby's email REGEXP
-- 15th - Enable Bot Fight Mode, DNSSEC, and registrar transfer to Cloudflare
-- 20th - Start transfer of all 10 domains to Cloudflare
-- 24th - Destroy manually all unconfirmed SlopeCS accounts 
-- 26th - Fly Production Console Machines
+- 15th - Enable Bot Fight Mode, DNSSEC. Finalize registrar transfer to Cloudflare.
+- 20th - Start transfer of all 10 of my domains to Cloudflare
+- 24th - Destroy manually all unconfirmed (fake) user accounts 
+- 26th - Fly production console machines configuration optimization
 #### February 
 - 7th - Add Rails rate limiting to password reset
-- 18th - Add honeypot to sign up form. Send Welcome email only after user is confirmed. Auto-Destroy Stale User Accounts with Solidqueue recurring task. Update Ruby, All gems, and Dockerfile-Related Stuff
+- 18th - Add honeypot to sign up form. Send Welcome email only after user is confirmed. Destroy Stale User Accounts with Solidqueue recurring task. Update Ruby, All gems, and Dockerfile-Related Stuff
 - 19th - Reopened sign ups and logins
 #### March 
 - 12th - Bot attacks re-start!
@@ -74,7 +74,7 @@ With two apps deployed for months, I'm feeling good about life, then the bots ar
 
 ## My Anti-BOT Checklist for web app form spam prevention
 
-Here's my own way to organize different anti-bot measures, from start (the beginning of the user's interaction) to end (your app's code). I've yet to use some of these. Which tactics am I missing?
+Here's my own way to organize different anti-bot measures, from top to bottom. Which tactics am I missing?
 
 ### My app's DNS
 1. DDoS protection
@@ -82,18 +82,18 @@ Here's my own way to organize different anti-bot measures, from start (the begin
 3. Privacy for your contact details
 4. Bot Fight Mode with JavaScript Detections 
 5. Record proxying
-6. Email authentication: SPF, DKIM, and DMARC
+6. Email authentication records: SPF, DKIM, and DMARC
 
 ### My app's host (Fly.io)
-1. TLS
-2. Memory-Safe Rust Proxy:
-3. Autostop/Autostart
+1. TLS, or Transport Layer Security - a cryptographic protocol that provides secure communication over a computer network
+2. Memory-Safe Rust Proxy
+3. Autostop/ Autostart
 
 ### My app's code 
-1. IP activity
+1. IP-based activity
     - Rate limiting actions on IP or other attribute to reduce brute force attacks 
 2. Authentication
-    1. Paid only! $$ - Bots are usually thwarted by payments. Accepting payment before user creation is a bot filter…
+    1. Paid only! $$ - Bots are usually thwarted by payments. Accepting payment before user creation is a bot filter.
     2. Oauth with Google, Facebook, Github, etc.
     3. Email authentication with Devise, Rails Auth, etc. 
         1. Limit sign in attempts
@@ -102,7 +102,7 @@ Here's my own way to organize different anti-bot measures, from start (the begin
         4. Email verification (prove it can receive mail)
         5. Email confirmation (prove user has access)
         7. Generic error messages - Devise's paranoid mode
-        7. CAPTCHAs
+        7. [CAPTCHAs](https://edgeguides.rubyonrails.org/security.html#captchas)
             1. Google Recaptcha gem (Positive)
             2. Honeypot - hidden form field (Negative)
 
