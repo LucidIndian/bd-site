@@ -27,15 +27,7 @@ I panicked -- will Postmark close my account and blacklist my domain?!
 
 No, that's silly, this must happen all of the time, it's basic stuff, just gotta fix it; the Rails Way. 
 
-## Fixing bots the Rails Way
-
-The rest of this post details the timeline of my experience, from discovering the bots to finally stopping them from exploiting my app. 
-
-At the end I share my own anti-bot checklist I'm building, many tactics I have yet to try. 
-
-I'm using Rails 8 and Devise for authentication. This is the timeline of discovering bot activity and then resolving it without making it too expensive and complicated for me nor too cumbersome for my eventual authentic human users!
-
-## What are bots?
+## What are "bots"?
 
 In the context of the internet and web apps, bots (robots) are automated programs that perform tasks on the web. Some bots are helpful (like search engine crawlers), while others can be disruptive or malicious (like spam bots). 
 
@@ -43,33 +35,44 @@ Bots can imitate human behavior to interact with websites and apps — sometimes
 
 My bots are trying to post links that will get clicks. Don't let them!
 
-## My anti-bot journey 
+## Fixing bots the Rails Way
+
+I'm using Rails 8 and Devise for authentication, see [Securing Rails Applications](https://edgeguides.rubyonrails.org/security.html). 
+
+This is the timeline of discovering bot activity and then resolving it without making it too expensive and complicated for me nor too cumbersome for my eventual authentic human users!
+
+Near the end I share my own anti-bot checklist I'm building, many tactics I have yet to try.
+
+## My anti-bot timeline 
+
+With two apps deployed for months, I'm feeling good about life, then the bots arrived...
 
 #### December, 2024 
-- 31st - Bot activity first discovered from Postmark alert!
-#### January 
+- 31st - Bot activity first discovered from Postmark alerting me to my monthly email quota!
+#### January, 2025 
 - 1st - Start studying security and anti-bot tactics. Require email confirmation to access account. 
 - 3rd - Disable sign ups and sessions
-- 11th - Add DMARC management
-- 14th - Improve email validation
-- 15th - Enable Bot Fight Mode, DNSSEC, and registrar transfer
+- 11th - Add DMARC management in Cloudflare
+- 14th - Improve email validation with Ruby's email REGEXP
+- 15th - Enable Bot Fight Mode, DNSSEC, and registrar transfer to Cloudflare
 - 20th - Start transfer of all 10 domains to Cloudflare
 - 24th - Destroy manually all unconfirmed SlopeCS accounts 
 - 26th - Fly Production Console Machines
 #### February 
 - 7th - Add Rails rate limiting to password reset
-- 18th - Add honeypot to sign up form. Send Welcome email only after user is confirmed. Update Ruby, All gems, and Dockerfile-Related Stuff
+- 18th - Add honeypot to sign up form. Send Welcome email only after user is confirmed. Auto-Destroy Stale User Accounts with Solidqueue recurring task. Update Ruby, All gems, and Dockerfile-Related Stuff
 - 19th - Reopened sign ups and logins
 #### March 
 - 12th - Bot attacks re-start!
 - 18th - New attack found, re-disable sign ups and sessions
-- 22nd - Add hidden timestamp validation for enhanced bot protection
+- 22nd - Add hidden timestamp validation
+- 23rd - Add two unique honeypot fields
 - 30th - Fix SSL Cert issue
 #### April 
-- 5th - Implement real_ip rate limiting w/ Cloudflare's proxy IP defense
+- 5th - Implement real_ip rate limiting to compensate for Cloudflare's proxy IP defense
 - 6th - Re-open for sign-ups and re-enable email sending! 
 
-## Anti-BOT Plan for Spam Prevention
+## My Anti-BOT Checklist for web app form spam prevention
 
 Here's my own way to organize different anti-bot measures, from start (the beginning of the user's interaction) to end (your app's code). I've yet to use some of these. Which tactics am I missing?
 
@@ -81,8 +84,10 @@ Here's my own way to organize different anti-bot measures, from start (the begin
 5. Record proxying
 6. Email authentication: SPF, DKIM, and DMARC
 
-### My app's host
-1. TBD
+### My app's host (Fly.io)
+1. TLS
+2. Memory-Safe Rust Proxy:
+3. Autostop/Autostart
 
 ### My app's code 
 1. IP activity
@@ -103,13 +108,19 @@ Here's my own way to organize different anti-bot measures, from start (the begin
 
 ## Other Thoughts
 
+### Visibility into bot activity
+
+I'm sending myself an email with data about the deterred registrant  when the honeypot gets triggered. I review to see patterns to know how to adjust.
+
+### App server availability and spam
+
 Using Fly.io, I had each on the smallest possible configuration that would still run the apps while keeping costs as low as possible. This entailed the app servers shutting down with inactivity, the result was a slower/cold start but it was great because I had no users yet. 
 
 My theory is that in this relatively "unavailable" state, my aps were protected from spam bots. Since the cold startup issue, perhaps bots would not wait around long enough fro my slow site to load? Why else would the bots suddenly attack both my apps? Seems like more than just a coincidence.
 
 ## Summary
 
-When your new Rails 8 app gets deployed to the world wide web, be prepared for the incessant spam bot bullies to try and knock your doors down. Be prepared with an app made of bricks and thick locks on the doors. 
+When my new Rails 8 apps were exposed to the world wide web, the incessant spam bot bullies to tried and knock my app's doors down. I responded with an app made of ruby-colored bricks. 
 
 ## Resources
 
