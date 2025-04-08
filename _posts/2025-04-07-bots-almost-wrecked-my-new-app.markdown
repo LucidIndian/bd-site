@@ -76,35 +76,33 @@ With two apps deployed for months, I'm feeling good about life, then the bots ar
 
 Here's my own way to organize different anti-bot measures, from top to bottom. Which tactics am I missing?
 
-### My app's DNS
-1. DDoS protection
-2. DNSSEC
-3. Privacy for your contact details
-4. Bot Fight Mode with JavaScript Detections 
-5. Record proxying
-6. Email authentication records: SPF, DKIM, and DMARC
-
-### My app's host (Fly.io)
-1. TLS, or Transport Layer Security - a cryptographic protocol that provides secure communication over a computer network
-2. Memory-Safe Rust Proxy
-3. Autostop/ Autostart
-
-### My app's code 
-1. IP-based activity
-    - Rate limiting actions on IP or other attribute to reduce brute force attacks 
-2. Authentication
-    1. Paid only! $$ - Bots are usually thwarted by payments. Accepting payment before user creation is a bot filter.
-    2. Oauth with Google, Facebook, Github, etc.
-    3. Email authentication with Devise, Rails Auth, etc. 
-        1. Limit sign in attempts
-        2. Limit password reset emails
-        3. Email validation (prove it's well-formed)
-        4. Email verification (prove it can receive mail)
-        5. Email confirmation (prove user has access)
-        7. Generic error messages - Devise's paranoid mode
-        7. [CAPTCHAs](https://edgeguides.rubyonrails.org/security.html#captchas)
-            1. Google Recaptcha gem (Positive)
-            2. Honeypot - hidden form field (Negative)
+1. My app's DNS (Cloudflare)
+    1. DDoS protection
+    2. DNSSEC
+    3. Privacy for your contact details
+    4. Bot Fight Mode with JavaScript Detections 
+    5. Record proxying
+    6. Email authentication records: SPF, DKIM, and DMARC
+2. My app's host (Fly.io)
+    1. TLS, or Transport Layer Security - a cryptographic protocol that provides secure communication over a computer network
+    2. Memory-Safe Rust Proxy
+    3. Autostop/ Autostart
+3. My app's code (Ruby on Rails)
+    1. IP-based activity
+        - Rate limiting actions on IP or other attribute to reduce brute force attacks 
+    2. Authentication
+        1. Paid only! $$ - Bots are usually thwarted by payments. Accepting payment before user creation is a bot filter.
+        2. Oauth with Google, Facebook, Github, etc.
+        3. Email authentication with Devise, Rails Auth, etc. 
+            1. Limit sign in attempts
+            2. Limit password reset emails
+            3. Email validation (prove it's well-formed)
+            4. Email verification (prove it can receive mail)
+            5. Email confirmation (prove user has access)
+            7. Generic error messages - Devise's paranoid mode
+    3. [CAPTCHAs](https://edgeguides.rubyonrails.org/security.html#captchas)
+        1. Google Recaptcha gem (Positive)
+        2. Honeypot - hidden form field (Negative)
 
 ## Other Thoughts
 
@@ -116,7 +114,7 @@ I'm sending myself an email with data about the deterred registrant  when the ho
 
 Using Fly.io, I had each on the smallest possible configuration that would still run the apps while keeping costs as low as possible. This entailed the app servers shutting down with inactivity, the result was a slower/cold start but it was great because I had no users yet. 
 
-My theory is that in this relatively "unavailable" state, my aps were protected from spam bots. Since the cold startup issue, perhaps bots would not wait around long enough fro my slow site to load? Why else would the bots suddenly attack both my apps? Seems like more than just a coincidence.
+My theory is that in this relatively "unavailable" state, my aps were protected from spam bots. Since the cold startup issue, perhaps bots would not wait around long enough for my slower site to load? Why else would the bots suddenly attack both my apps? Seems like more than just a coincidence.
 
 ## Summary
 
