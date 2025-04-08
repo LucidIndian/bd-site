@@ -39,7 +39,6 @@ My bots are trying to post links that will get clicks. Don't let them!
 
 I'm using Rails 8 and Devise for authentication, see [Securing Rails Applications](https://edgeguides.rubyonrails.org/security.html). 
 
-This is the timeline of discovering bot activity and then resolving it without making it too expensive and complicated for me nor too cumbersome for my eventual authentic human users!
 
 Near the end I share my own anti-bot checklist I'm building, many tactics I have yet to try.
 
@@ -47,8 +46,11 @@ Near the end I share my own anti-bot checklist I'm building, many tactics I have
 
 With two apps deployed for months, I'm feeling good about life, then the bots arrived...
 
+This is the timeline of discovering bot activity and resolving it without making it too expensive and complicated for me nor too cumbersome for my eventual authentic human users.
+
 #### December, 2024 
 - 31st - Bot activity first discovered from Postmark alerting me to my monthly email quota!
+
 #### January, 2025 
 - 1st - Start studying security and anti-bot tactics. Require email confirmation to access account. 
 - 3rd - Disable sign ups and sessions. Add Rails-native rate limiting and paranoid Devise messaging.
@@ -58,16 +60,19 @@ With two apps deployed for months, I'm feeling good about life, then the bots ar
 - 20th - Start transfer of all 10 of my domains to Cloudflare
 - 24th - Destroy manually all unconfirmed (fake) user accounts 
 - 26th - Fly production console machines configuration optimization
+
 #### February 
 - 7th - Add Rails rate limiting to password reset
 - 18th - Add honeypot to sign up form. Send Welcome email only after user is confirmed. Destroy Stale User Accounts with Solidqueue recurring task. Update Ruby, All gems, and Dockerfile-Related Stuff
 - 19th - Reopened sign ups and logins
+
 #### March 
 - 12th - Bot attacks re-start!
 - 18th - New attack found, re-disable sign ups and sessions
 - 22nd - Add hidden timestamp validation
 - 23rd - Add two unique honeypot fields
 - 30th - Fix SSL Cert issue
+
 #### April 
 - 5th - Implement real_ip rate limiting to compensate for Cloudflare's proxy IP defense
 - 6th - Re-open for sign-ups and re-enable email sending! 
