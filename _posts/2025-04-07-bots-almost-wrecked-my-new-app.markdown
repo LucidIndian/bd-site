@@ -114,9 +114,11 @@ Below is my timeline of discovering bot activity and resolving it for free while
 - 5th - Implement real_ip rate limiting to compensate for Cloudflare's proxy IP defense
 - 6th - Re-enable sign-ups, logins, and email sending! 
 
+Since early April, so far so good!
+
 ## My Anti-BOT Checklist for web app form spam prevention
 
-Here's my own way to organize different anti-bot measures, from top to bottom. Which tactics am I missing?
+Here's my way to organize the various anti-bot measures I learned about, from top (ealry part of the user's request) to bottom (end part of the request). Which tactics am I missing?
 
 1. DNS Management (Cloudflare)
     1. DDoS protection
@@ -132,17 +134,18 @@ Here's my own way to organize different anti-bot measures, from top to bottom. W
     1. IP-based activity
         - Rate limiting actions on IP or other to reduce brute force attacks. See "[Brute-Forcing Accounts](https://edgeguides.rubyonrails.org/security.html#brute-forcing-accounts)" for more.
     2. Authentication
-        1. Paid only - Bots are usually thwarted by payments. Accepting payment before User creation may be a better bot filter.
-        2. Oauth with Google, Facebook, Github, etc.
+        1. Oauth with Google, Facebook, Github, etc.
             - Let a large organization with massive resources worry about the bots. 
-        3. Email authentication with Devise, Rails Auth, etc. 
+        2. Email authentication with Devise, Rails Auth, etc. 
             1. Limit sign in attempts
             2. Limit password reset emails
             3. Email validation (prove address is well-formed)
             4. Email verification (prove address can receive mail)
             5. Email confirmation (prove user has access to email)
             7. Generic error messages - Devise's paranoid mode. This prevents attempts to "guess" accounts, or account enumeration, by avoiding sharing identifiable or revealing data to the user.
-    3. [CAPTCHAs](https://edgeguides.rubyonrails.org/security.html#captchas)
+    3. Authorization
+        1.  Paid only - Bots are usually thwarted by payments. Accepting payment before User creation may be a better bot filter.
+    4. [CAPTCHAs](https://edgeguides.rubyonrails.org/security.html#captchas)
         1. Google Recaptcha gem (Positive)
         2. Honeypot - hidden form field (Negative)
             - See, "[Stopping spambots with hashes and honeypots](https://nedbatchelder.com/text/stopbots.html)"
@@ -188,7 +191,7 @@ In their defense:
 
 A single honeypot field was not enough. After a few weeks bots seemed to "figure it out" or get lucky by avoiding that field upon registration. I had to go back to study and push a more sophisticated honeypot.
 
-#### Email validation
+#### Email address validation
 
 Upon my non-expert manual visual review, most if not all of the thousands of bot sign ups seem to be associated with well-formed emails, I do not even see many "disposable" emails. Enhancing this slightly, as I did, or even more does not seem to matter much. 
 
@@ -202,9 +205,9 @@ I wonder if my sophisticated honeypot will fail to be enough one day. A Turnstil
 
 Using a paywall to inhibit account creation seems like a win but aren't there benefits of a free plan? Maybe a free plan with credit card validation as an additional measure?
 
-### Email verification?
+### Email address verification?
 
-Proving an email address actually exists and can receive mail through verification before accepting it is different and feels more promising to help avoid nonexistent registrants (fake emails).
+Proving an email address actually exists and can receive mail before accepting it is different and feels more promising to help avoid nonexistent registrants (phony emails).
 
 ## Summary
 
