@@ -4,7 +4,7 @@ title:  "Bots Almost Spammed my New Rails App to Death - What I Did to Stop Them
 date:   2025-4-7 00:00:00 -0700
 categories: rails coding
 tags: slopecs rails coding bots spam
-image: /assets/bd_logo500pxsquare.png
+image: /assets/honeypot_bots_blue_drumlin.png
 ---
 
 ## My first Rails apps deployed
@@ -15,25 +15,17 @@ About a year ago I launched (deployed) my first two Rails apps, [GeoGardening](h
 
 Shortly after upgrading my apps' servers in late 2024 to be "always on", they each received A TON of activity and I didn't find out until it was too late.
 
-My apps send a welcome email after a User account is created; pretty basic stuff, right? - Nope... 
+My apps send a welcome email after a User account is created; pretty basic stuff, right?
 
 First, I found over 140 "Welcome" and "password reset" emails were sent from my Postmark account with a high percentage bounced and reported as spam, hurting my deliverability score, and immediately filling my monthly quota. What?! I didn't do that much testing this month? So I looked at the production database next...
 
 I found over 1,400 user accounts with about 15 new accounts being created every day! 
 
-"Wait, did I stumble upon a massive, unicorn success?!?" -- Nope... In fact, all users besides my test accounts were fake - bots - every single one. Major disappointment! 
+"Wait, did I stumble upon a massive, unicorn success?!"  No... In fact, all users besides my test accounts were fake - all bots - every single one. Major disappointment! 
 
-I panicked -- will Postmark close my account and blacklist my domain?!
+I started to panic - will Postmark close my account and blacklist my domain?!
 
-No, that's silly, this must happen all of the time, it's basic stuff, just gotta fix it; the Rails Way. 
-
-## What are "bots"?
-
-In the context of the internet and web apps, bots (robots) are automated programs that perform tasks on the web. Some bots are helpful (like search engine crawlers), while others can be disruptive or malicious (like spam bots). 
-
-Bots can imitate human behavior to interact with websites and apps — sometimes so effectively that it’s hard to tell them apart from real users.
-
-My bots are trying to post links that will get clicks. Don't let them!
+No, this must happen all of the time, it's basic stuff, just gotta fix it; the Rails Way. 
 
 ## Fixing bots the Rails Way
 
@@ -42,11 +34,21 @@ I'm using Rails 8 and Devise for authentication, see [Securing Rails Application
 
 Near the end I share my own anti-bot checklist I'm building, many tactics I have yet to try.
 
+## First, what are "bots"?
+
+In the context of the internet and web apps, bots (robots) are automated programs that perform tasks on the web. 
+
+Some bots are helpful (like search engine crawlers), while others can be disruptive or malicious (like spam bots). 
+
+Bots can imitate human behavior to interact with websites and apps — sometimes so effectively that it’s hard to tell them apart from real users.
+
+Some bots are trying to post links that will get clicks. Don't let them!
+
 ## My anti-bot timeline 
 
-With two apps deployed for months, I'm feeling good about life, then the bots arrived...
+With two apps deployed for almost a year, I was feeling good about life and coding, then the bots arrived...
 
-This is the timeline of discovering bot activity and resolving it without making it too expensive and complicated for me nor too cumbersome for my eventual authentic human users.
+Below is my timeline of discovering bot activity and resolving it for free while keeping a nice experience for my eventual authentic human users.
 
 #### December, 2024 
 - 31st - Bot activity first discovered from Postmark alerting me to my monthly email quota!
@@ -63,12 +65,16 @@ This is the timeline of discovering bot activity and resolving it without making
 
 #### February 
 - 7th - Add Rails rate limiting to password reset
-- 18th - Add honeypot to sign up form. Send Welcome email only after user is confirmed. Destroy Stale User Accounts with Solidqueue recurring task. Update Ruby, All gems, and Dockerfile-Related Stuff
+- 18th 
+    - Add honeypot to sign up form. 
+    - Send Welcome email only after user is confirmed. 
+    - Destroy Stale User Accounts with Solidqueue recurring task. 
+    - Update Ruby, All gems, and Dockerfile-Related Stuff
 - 19th - Reopened sign ups and logins
 
 #### March 
 - 12th - Bot attacks re-start!
-- 18th - New attack found, re-disable sign ups and sessions
+- 18th - New attack found, re-disable sign ups and sessions 
 - 22nd - Add hidden timestamp validation
 - 23rd - Add two unique honeypot fields
 - 30th - Fix SSL Cert issue
@@ -127,5 +133,6 @@ When my new Rails 8 apps were exposed to the world wide web, the incessant spam 
 
 ## Resources
 
-1. [Securing Rails Applications](https://edgeguides.rubyonrails.org/security.html) 
+1. "[Securing Rails Applications](https://edgeguides.rubyonrails.org/security.html)" from the Ruby on Rails Guides
 2. "[Stopping spambots with hashes and honeypots](https://nedbatchelder.com/text/stopbots.html)" by Ned Batchelder - More sophisticated negative CAPTCHAs. 
+3. "[How To: Add :confirmable to Users](https://github.com/heartcombo/devise/wiki/How-To:-Add-:confirmable-to-Users)" from heartcombo / devise
