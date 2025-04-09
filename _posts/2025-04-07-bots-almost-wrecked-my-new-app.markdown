@@ -120,19 +120,19 @@ Since early April, so far so good!
 
 Here's my way to organize the various anti-bot measures I learned about, from top (ealry part of the user's request) to bottom (end part of the request). Which tactics am I missing?
 
-1. DNS Management (Cloudflare)
+1. DNS Management
     1. DDoS protection
     2. DNSSEC
     3. Privacy for your contact details
     4. Bot Fight Mode with JavaScript Detections 
     5. Record proxying
     6. Email authentication records: SPF, DKIM, and DMARC
-2. App Host (Fly.io)
+2. App Host
     1. TLS, or Transport Layer Security - a cryptographic protocol that provides secure communication over a computer network
     2. Autostop/ Autostart
-3. App code (Ruby on Rails)
+3. App code
     1. IP-based activity
-        - Rate limiting actions on IP or other to reduce brute force attacks. See "[Brute-Forcing Accounts](https://edgeguides.rubyonrails.org/security.html#brute-forcing-accounts)" for more.
+        - Rate limiting actions on IP address (location) or other to reduce brute force attacks. See "[Brute-Forcing Accounts](https://edgeguides.rubyonrails.org/security.html#brute-forcing-accounts)" for more.
     2. Authentication
         1. Oauth with Google, Facebook, Github, etc.
             - Let a large organization with massive resources worry about the bots. 
@@ -150,21 +150,19 @@ Here's my way to organize the various anti-bot measures I learned about, from to
         2. Honeypot - hidden form field (Negative)
             - See, "[Stopping spambots with hashes and honeypots](https://nedbatchelder.com/text/stopbots.html)"
 
-## Other Thoughts
+## App server availability and spam
 
-### App server availability and spam
+Using Fly.io, I had each on the smallest possible machines configuration that would still run the apps while keeping costs as low as possible. This entailed the app servers shutting down with inactivity, the result was a slower/cold start but it was great because I had no users yet. 
 
-Using Fly.io, I had each on the smallest possible configuration that would still run the apps while keeping costs as low as possible. This entailed the app servers shutting down with inactivity, the result was a slower/cold start but it was great because I had no users yet. 
+My theory is that y aps were protected from spam bots while in this relatively "unavailable" state. Perhaps bots would not wait around long enough for my slower site to load? Why else would the bots suddenly attack both my apps at the same time? Seems like more than just a coincidence.
 
-My theory is that in this relatively "unavailable" state, my aps were protected from spam bots. Since the cold startup issue, perhaps bots would not wait around long enough for my slower site to load? Why else would the bots suddenly attack both my apps? Seems like more than just a coincidence.
+## Visibility into bot activity
 
-### Visibility into bot activity
+I'm sending myself an email with data about the deterred bot whenever the honeypot catches one. The email includes the IP, duration to sign up, etc. I review for patterns to know how and if to adjust my honeypot.
 
-I'm sending myself an email with data about the deterred bot registrant whenever the honeypot catches one. The email includes the IP, duration to sign up, etc. I review for patterns to know how and if to adjust my honeypot.
+## What worked against the bots?
 
-### What worked against the bots?
-
-#### An advanced honeypot
+### An advanced honeypot
 
 By far, the most effective tactic was the honeypot, especially once it was made to be more than just a single text field. 
 
@@ -172,13 +170,13 @@ I experienced consistent bot sign ups until the honeypot was installed. Bots wer
 
 Making it more complicated with a timestamp validation and several different honeypot fields made the largest difference. 
 
-#### Email confirmation
+### Email confirmation
 
 I have some evidence of bot registrations that were able to confirm the email, but maybe 95% do not. I found this when sign ups were open for a period and did not require confirmation. 
 
-### What didn't work against the bots?
+## What didn't work against the bots?
 
-#### Cloudflare
+### Cloudflare
 
 Surprisingly, I thought moving to Cloudflare for DNS and enabling their Bot Fight Mode would have been enough to stop the fraudulent sign ups.
 
@@ -187,11 +185,11 @@ In their defense:
 - Maybe better configuration of other settings would help
 - My sites benefit in other ways from their anti-spam features, I'm grateful for that.
 
-#### A simple honeypot
+### A simple honeypot
 
 A single honeypot field was not enough. After a few weeks bots seemed to "figure it out" or get lucky by avoiding that field upon registration. I had to go back to study and push a more sophisticated honeypot.
 
-#### Email address validation
+### Email address validation
 
 Upon my non-expert manual visual review, most if not all of the thousands of bot sign ups seem to be associated with well-formed emails, I do not even see many "disposable" emails. Enhancing this slightly, as I did, or even more does not seem to matter much. 
 
@@ -199,11 +197,11 @@ Upon my non-expert manual visual review, most if not all of the thousands of bot
 
 ### Positive CAPTCHa?
 
-I wonder if my sophisticated honeypot will fail to be enough one day. A Turnstile by Cloudflare or the reCAPTCHA from Google are on my to-do list.
+I wonder if my sophisticated honeypot will fail to be enough one day. The reCAPTCHA from Google is on my list if more advanced form defense is needed but I'd rather not.
 
-### Paid only or Freemium?
+### Paid only or freemium?
 
-Using a paywall to inhibit account creation seems like a win but aren't there benefits of a free plan? Maybe a free plan with credit card validation as an additional measure?
+Using a paywall to inhibit account creation seems like a win but aren't there benefits of a free plan? Maybe a limited free plan with credit card validation as an additional measure? 
 
 ### Email address verification?
 
@@ -217,7 +215,7 @@ I responded by learning their tricks, implementing simple and effective counter 
 
 The result; an app made of glimmering ruby-colored bricks made much less-penetrable by the evil robots of the web.
 
-## Resources for anti-bot security 
+## Resources for anti-bot security
 
 1. "[Securing Rails Applications](https://edgeguides.rubyonrails.org/security.html)" from the Ruby on Rails Guides.
 2. "[Stopping spambots with hashes and honeypots](https://nedbatchelder.com/text/stopbots.html)" by Ned Batchelder - A more sophisticated negative CAPTCHA. 
