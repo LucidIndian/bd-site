@@ -98,7 +98,7 @@ Below is my timeline of discovering bot activity and resolving it for free while
 - 18th 
     - Add honeypot to sign up form
     - Send Welcome email only after user is confirmed
-    - Destroy stale User Accounts with Solidqueue recurring task
+    - Destroy stale User accounts with Solid Queue recurring task
     - Update Ruby, all gems, and Dockerfile stuff
 - 19th - Reopened sign ups and logins
 
@@ -116,23 +116,23 @@ Below is my timeline of discovering bot activity and resolving it for free while
 
 Since early April, so far so good!
 
-## My Anti-BOT Checklist for web app form spam prevention
+## My anti-bot checklist for web app form spam prevention
 
-Here's my way to organize the various anti-bot measures I learned about, from top (ealry part of the user's request) to bottom (end part of the request). Which tactics am I missing?
+Here's my way to organize the various anti-bot measures I found, from top to bottom. What am I missing?
 
-1. DNS Management
-    1. DDoS protection
-    2. DNSSEC
-    3. Privacy for your contact details
-    4. Bot Fight Mode with JavaScript Detections 
-    5. Record proxying
-    6. Email authentication records: SPF, DKIM, and DMARC
+1. Domain Name System (DNS) Management
+    1. DNSSEC - a set of cryptographic protocols that enhance the security of the DNS.
+    2. Privacy for contact details
+    3. Email authentication records: SPF, DKIM, and DMARC
+    4. [Bot Fight Mode](https://developers.cloudflare.com/bots/get-started/bot-fight-mode/) with JavaScript Detections (Cloudflare)
+    5. Record proxying - optimize, cache, and protect all requests to an app
+        - DDoS (Distributed Denial of Service) protection
 2. App Host
     1. TLS, or Transport Layer Security - a cryptographic protocol that provides secure communication over a computer network
     2. Autostop/ Autostart
 3. App code
     1. IP-based activity
-        - Rate limiting actions on IP address (location) or other to reduce brute force attacks. See "[Brute-Forcing Accounts](https://edgeguides.rubyonrails.org/security.html#brute-forcing-accounts)" for more.
+        - Rate limiting actions on the IP address (location) of the request or other to reduce brute force attacks. See "[Brute-Forcing Accounts](https://edgeguides.rubyonrails.org/security.html#brute-forcing-accounts)" for more.
     2. Authentication
         1. Oauth with Google, Facebook, Github, etc.
             - Let a large organization with massive resources worry about the bots. 
@@ -195,6 +195,12 @@ Upon my non-expert manual visual review, most if not all of the thousands of bot
 
 ## What's next?
 
+### Better rate limiting with Solid Cache
+
+Right now, I'm using MemoryStore as my production cache which I've read has drawbacks, especially for rate limiting IPs. 
+
+If I understand correctly, a user could theoretically duplicate their abuse on each active Ruby process, since each process does not have access to the others cache. A database-backed system avoids that by having a source of truth to reference that is durable and consistent.
+
 ### Positive CAPTCHa?
 
 I wonder if my sophisticated honeypot will fail to be enough one day. The reCAPTCHA from Google is on my list if more advanced form defense is needed but I'd rather not.
@@ -205,7 +211,7 @@ Using a paywall to inhibit account creation seems like a win but aren't there be
 
 ### Email address verification?
 
-Proving an email address actually exists and can receive mail before accepting it is different and feels more promising to help avoid nonexistent registrants (phony emails).
+Proving an email address actually exists and can receive mail before accepting it is different and feels more promising to help avoid nonexistent registrants (phony emails). 
 
 ## Summary
 
