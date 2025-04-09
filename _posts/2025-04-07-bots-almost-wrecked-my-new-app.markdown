@@ -9,7 +9,9 @@ image: /assets/honeypot_bots_blue_drumlin.png
 
 ## My first Rails apps deployed
 
-About a year ago I launched (deployed) my first two Rails apps, [GeoGardening](https://geogardening.app/) and [SlopeCS](https://slopecs.com/) with fly.io and everything was great. I was still building, testing - learning how to get "Hello World" out to the actual world for the very first time. Then, on New Years Eve 2024, all of that changed and I was thrust into a 4-month ongoing battle against the spam bots.
+About a year ago I launched (deployed) my first two Rails apps, [GeoGardening](https://geogardening.app/) and [SlopeCS](https://slopecs.com/) with fly.io and everything was great. I was still building, testing - learning how to get "Hello World" out to the actual world for the very first time. Then, on New Years Eve 2024, all of that changed and I was thrust into a 4-month ongoing battle against the spam bots. 
+
+I share my timeline and my own Anti-BOT time Checklist below; in progress. Some tactics implemented and others I have yet to try.
 
 ### Getting to the BOT-tom of suspicious sign ups
 
@@ -53,9 +55,6 @@ A bot proves they are not human and the human passes the test.
 
 Example: A bot fills the honeypot fields that are invisible to the human. 
 
-
-I share my own My Anti-BOT Checklist below; in progress, some tactics implemented and others I have yet to try.
-
 ## First, what are "bots"?
 
 In the context of the internet and web apps, bots (robots) are automated programs that perform tasks on the web. 
@@ -76,11 +75,16 @@ Below is my timeline of discovering bot activity and resolving it for free while
 - 31st - Bot activity first discovered from Postmark alerting me to my monthly email quota!
 
 #### January, 2025 
-- 1st - Start studying security and anti-bot tactics. Require email confirmation to access account. 
-- 3rd - Disable sign ups and sessions. Add Rails-native rate limiting and paranoid Devise messaging.
+- 1st - Start studying security and anti-bot tactics
+    - Require email confirmation to access account
+    - Ask the Rails community on X for advice. Special thanks to those who replied to help build by tactic list: @bchecketts, @MichaelDChaney, @yarotheslav, @tomcnle, and @paraxialio:
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Soon after deploying my Rails 8 app with Devise, it got bombarded by bots causing the app to send 100 Welcome and PW reset emails to basically nobody! <br><br>After adding the Confirmable module, what’s the best way to avoid sending tons of confirmation emails to fake addresses?</p>&mdash; Tygh Walters (@TyghWalters) <a href="https://twitter.com/TyghWalters/status/1874702583962705953?ref_src=twsrc%5Etfw">January 2, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+- 3rd - Disable new sign ups and sessions
+    - Add Rails-native rate limiting and paranoid Devise messaging
 - 11th - Add DMARC management in Cloudflare
 - 14th - Improve email validation with Ruby's email REGEXP
-- 15th - Enable Bot Fight Mode, DNSSEC. Finalize registrar transfer to Cloudflare.
+- 15th - Enable Bot Fight Mode, DNSSEC. Finalize registrar transfer to Cloudflare
 - 20th - Start transfer of all 10 of my domains to Cloudflare
 - 24th - Destroy manually all unconfirmed (fake) user accounts 
 - 26th - Fly production console machines configuration optimization
@@ -88,10 +92,10 @@ Below is my timeline of discovering bot activity and resolving it for free while
 #### February 
 - 7th - Add Rails rate limiting to password reset
 - 18th 
-    - Add honeypot to sign up form. 
-    - Send Welcome email only after user is confirmed. 
-    - Destroy Stale User Accounts with Solidqueue recurring task. 
-    - Update Ruby, All gems, and Dockerfile-Related Stuff
+    - Add honeypot to sign up form
+    - Send Welcome email only after user is confirmed
+    - Destroy stale User Accounts with Solidqueue recurring task
+    - Update Ruby, all gems, and Dockerfile stuff
 - 19th - Reopened sign ups and logins
 
 #### March 
@@ -99,7 +103,7 @@ Below is my timeline of discovering bot activity and resolving it for free while
 - 18th - New attack found, re-disable sign ups and sessions 
 - 22nd - Add hidden timestamp validation
 - 23rd - Add two unique honeypot fields
-- 30th - Fix SSL Cert issue
+- 30th - Fix TLS cert expiration issue
 
 #### April 
 - 5th - Implement real_ip rate limiting to compensate for Cloudflare's proxy IP defense
@@ -153,7 +157,7 @@ I'm sending myself an email with data about the deterred registrant whenever the
 
 #### An advanced honeypot
 
-By far, the most effective tactic was the honeypot, or negative CAPTCHA, especially once it was made to be more complicated than just a single field. 
+By far, the most effective tactic was the honeypot, especially once it was made to be more than just a single text field. 
 
 I experienced consistent bot sign ups until the honeypot was installed. Bots were initially thwarted, then able to outsmart my simple honeypot. Making it more complicated with a timestamp validation and several different honeypot fields made the largest difference. 
 
