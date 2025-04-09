@@ -37,9 +37,19 @@ I started to worry - will Postmark penalize me or close my account and blacklist
 
 No, this must happen all of the time, it's basic stuff, just gotta fix it; the Rails Way. 
 
+## First, what are "bots"?
+
+In the context of the internet and websites, bots (robots) are automated programs that perform tasks on the web. 
+
+Some bots are helpful (like search engine crawlers), while others can be disruptive or malicious (like spam bots). 
+
+Bots can imitate human behavior to interact with websites and apps — sometimes so effectively that it’s hard to tell them apart from real users.
+
+Some bots are trying to post links that will get clicks. Don't let them!
+
 ## Fixing bots, the Rails Way
 
-I'm using Rails 8 and Devise for authentication. After Googling, asking AI, and the X community for tips on how to mitigate these bots, I turned to the authoritative Rails Guides to see what they had to say, see [Securing Rails Applications](https://edgeguides.rubyonrails.org/security.html).
+I'm using Rails 8 and Devise for authentication. After Googling, asking AI, and the X community for tips on how to mitigate these bots, I turned to the authoritative Rails Edge Guides to see what they had to say, see [Securing Rails Applications](https://edgeguides.rubyonrails.org/security.html).
 
 ### CAPTCHAs, positive and negative
 
@@ -57,21 +67,11 @@ A bot proves they are not human with a test and the human passes.
 
 Example: A bot completes the invisible honeypot form fields which discards the submission. 
 
-## First, what are "bots"?
-
-In the context of the internet and websites, bots (robots) are automated programs that perform tasks on the web. 
-
-Some bots are helpful (like search engine crawlers), while others can be disruptive or malicious (like spam bots). 
-
-Bots can imitate human behavior to interact with websites and apps — sometimes so effectively that it’s hard to tell them apart from real users.
-
-Some bots are trying to post links that will get clicks. Don't let them!
-
 ## My anti-bot timeline 
 
 With two apps deployed for almost a year, I was feeling good about life and coding, then the bots arrived...
 
-Below is my timeline of discovering bot activity and resolving it for free while keeping a nice experience for my eventual authentic human users.
+Below is my timeline of first discovering bot activity and resolving it for free while keeping a nice experience for my eventual authentic human users.
 
 #### December, 2024 
 - 31st - Bot activity first discovered from Postmark alerting me to my monthly email quota!
@@ -87,10 +87,10 @@ Below is my timeline of discovering bot activity and resolving it for free while
     - Add paranoid messaging for Devise authentication
 - 11th - Add DMARC management in Cloudflare
 - 14th - Improve email validation with Ruby's email REGEXP
-- 15th - Enable Bot Fight Mode, DNSSEC. 
+- 15th - Enable DNSSEC and [Bot Fight Mode](https://developers.cloudflare.com/bots/get-started/bot-fight-mode/) with JavaScript Detections (Cloudflare). 
     - Finalize registrar transfer to Cloudflare
 - 20th - Start transfer of all 10 of my domains to Cloudflare
-- 24th - Destroy manually all unconfirmed (fake) user accounts 
+- 24th - Destroy manually all unconfirmed (fake) User accounts 
 - 26th - Fly production console machines configuration optimization
 
 #### February 
@@ -108,11 +108,11 @@ Below is my timeline of discovering bot activity and resolving it for free while
     - Re-disable sign ups and sessions until fixed
 - 22nd - Add hidden timestamp validation
 - 23rd - Add two unique honeypot fields
-- 30th - Fix TLS cert expiration issue
+- 30th - Fix TLS certificate expiration issue related to proxied (protected) DNS records
 
 #### April 
 - 5th - Implement real_ip rate limiting to compensate for Cloudflare's proxy IP defense
-- 6th - Re-enable sign-ups, logins, and email sending! 
+- 6th - Re-enable registrations, sessions, and emails! 
 
 Since early April, so far so good!
 
@@ -124,7 +124,7 @@ Here's my way to organize the various anti-bot measures I found, from top to bot
     1. DNSSEC - a set of cryptographic protocols that enhance the security of the DNS.
     2. Privacy for contact details
     3. Email authentication records: SPF, DKIM, and DMARC
-    4. [Bot Fight Mode](https://developers.cloudflare.com/bots/get-started/bot-fight-mode/) with JavaScript Detections (Cloudflare)
+    4. [Bot Fight Mode](https://developers.cloudflare.com/bots/get-started/bot-fight-mode/) with JavaScript Detections
     5. Record proxying - optimize, cache, and protect all requests to an app
         - DDoS (Distributed Denial of Service) protection
 2. App Host
@@ -162,7 +162,7 @@ I'm sending myself an email with data about the deterred bot whenever the honeyp
 
 ## What worked against the bots?
 
-### An advanced honeypot
+### A sophisticated honeypot
 
 By far, the most effective tactic was the honeypot, especially once it was made to be more than just a single text field. 
 
@@ -199,11 +199,16 @@ Upon my non-expert manual visual review, most if not all of the thousands of bot
 
 Right now, I'm using MemoryStore as my production cache which I've read has drawbacks, especially for rate limiting IPs. 
 
-If I understand correctly, a user could theoretically duplicate their abuse on each active Ruby process, since each process does not have access to the others cache. A database-backed system avoids that by having a source of truth to reference that is durable and consistent.
+If I understand correctly, a user could duplicate their abuse on each active Ruby process, since each process does not have access to the others cache. A database-backed system avoids that by having a source of truth to reference that is durable and consistent.
+
+### An even MORE sophisticated honeypot
+
+- Using randomized field names
+- Using obscured field names via a "spinner", or an MD5 hash
 
 ### Positive CAPTCHa?
 
-I wonder if my sophisticated honeypot will fail to be enough one day. The reCAPTCHA from Google is on my list if more advanced form defense is needed but I'd rather not.
+I wonder if my current semi-sophisticated honeypot will fail to be enough one day. The reCAPTCHA from Google is on my list if more advanced form of defense is needed but I'd rather not since it bothers the real people and it's one more dependency.
 
 ### Paid only or freemium?
 
