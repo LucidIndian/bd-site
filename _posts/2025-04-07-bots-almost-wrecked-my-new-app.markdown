@@ -9,55 +9,57 @@ image: /assets/honeypot_bots_blue_drumlin.png
 
 ## My first Rails apps deployed
 
-About a year ago I launched (deployed) my first two Rails apps, [GeoGardening](https://geogardening.app/) and [SlopeCS](https://slopecs.com/) with fly.io and everything was great. I was still building, testing - learning how to get "Hello World" out to the actual world for the very first time. Then, on New Years Eve 2024, all of that changed and I was thrust into a 4-month ongoing battle against the spam bots. 
+About a year ago I launched (deployed) my first two Rails apps, [GeoGardening](https://geogardening.app/) and [SlopeCS](https://slopecs.com/) with fly.io and everything was great. I was still building, testing - learning how to get "Hello World" out to the actual world for the very first time. Then, on New Years Eve 2024, all of that changed and I was thrust into a 4-month ongoing battle against the spambots. 
 
-I share my timeline and my own Anti-BOT time Checklist below; in progress. Some tactics implemented and others I have yet to try.
+Further below, I share my timeline and my own Anti-BOT Checklist. Some tactics implemented and others I have yet to try.
 
 ### Getting to the BOT-tom of suspicious sign ups
 
-Shortly after upgrading my apps' servers in late 2024 to be "always on", they each suddenly received A TON of activity and I didn't find out until it was too late.
+Shortly after upgrading my apps' servers in late 2024 to be "always on" or not suspended, they each suddenly received A TON of activity and I didn't find out until it was too late.
 
-My apps have email authentication, password reset, and send a welcome email after a User account is created; pretty basic stuff, right?
+My apps use email-based authentication, password reset, and send a welcome message after a User account is created; pretty basic stuff, right?
 
-One day I received an email from Postmark, my email service provider, noting that I had reached my monthly quota of 100 emails on the free plan. 
+That was until that one day I received an email from Postmark, my email service provider, noting that I had surpassed my monthly quota of 100 emails on their free plan. 
 
-"Wait, what?! I didn't do that much testing this month? Maybe it's real users?" 
+"Wait, what?! I didn't do THAT much testing this month. Maybe these are real users?" 
 
-I logged into Postmark to find over 140 "Welcome" and "password reset" emails were sent with a very high bounce and spam rate, hurting my deliverability score, and immediately filling my monthly quota by + 40%! Many of the emails looked legit, @gmail domains, but the usernames were suspicious: like kdsjc67df(at)gmail.com
+I logged into Postmark to find over 140 "Welcome" and "Password reset" emails were sent with a very high bounce and spam rate, hurting my deliverability score, and immediately filling my monthly quota by + 40%! Many of the emails looked legit, @gmail domains, but the usernames were suspicious: like `kdsjc67df(at)gmail.com`
 
 Next, I logged into the production console and looked at the User table in my production database...
 
 Over 1,400 user accounts had been created with about 15 new ones coming in every day! 
 
-"Wait -- did I stumble upon a massive, unicorn success?!"  No... In fact, it turned out all users besides my few test accounts were fake - all created by bots - every single one. Major disappointment! 
+"Wait - did I stumble upon a massive, unicorn success?!"  
 
-I started to panic - will Postmark close my account and blacklist my domain?!
+No... In fact, it turned out all users besides my few test accounts were fake - all created by bots - every single one. Big disappointment! 
+
+I started to worry - will Postmark penalize me or close my account and blacklist my domain?!
 
 No, this must happen all of the time, it's basic stuff, just gotta fix it; the Rails Way. 
 
 ## Fixing bots, the Rails Way
 
-I'm using Rails 8 and Devise for authentication. After Googling and asking AI for tips on how to mitigate these bots, I turned to the Rails Guides to see what they had to say, see [Securing Rails Applications](https://edgeguides.rubyonrails.org/security.html).
+I'm using Rails 8 and Devise for authentication. After Googling, asking AI, and the X community for tips on how to mitigate these bots, I turned to the authoritative Rails Guides to see what they had to say, see [Securing Rails Applications](https://edgeguides.rubyonrails.org/security.html).
 
 ### CAPTCHAs, positive and negative
 
-Section [6.3. CAPTCHAs](https://edgeguides.rubyonrails.org/security.html#captchas) from tbe Guides mentions different types of bots and common ways to combat them with two methods of differentiating bots from humans, positive and negative:
+Particularly interesting is Section [6.3. CAPTCHAs](https://edgeguides.rubyonrails.org/security.html#captchas) from the Guides. It describes different types of bots and common ways to combat them with two methods of differentiating bots from humans, positive and negative CAPTCHAs.
 
 #### Positive CAPTCHA
 
-A user proves they are human and the bot fails the test. 
+A user proves they are human with a test and the bot fails. 
 
-Example: A user completes a test, usually an image-related quiz. 
+Example: A user completes a test to submit the form, usually an image-related quiz, which validates the submission. 
 
 #### Negative CAPTCHA
 
-A bot proves they are not human and the human passes the test. 
+A bot proves they are not human with a test and the human passes. 
 
-Example: A bot fills the honeypot fields that are invisible to the human. 
+Example: A bot completes the invisible honeypot form fields which discards the submission. 
 
 ## First, what are "bots"?
 
-In the context of the internet and web apps, bots (robots) are automated programs that perform tasks on the web. 
+In the context of the internet and websites, bots (robots) are automated programs that perform tasks on the web. 
 
 Some bots are helpful (like search engine crawlers), while others can be disruptive or malicious (like spam bots). 
 
@@ -80,11 +82,13 @@ Below is my timeline of discovering bot activity and resolving it for free while
     - Ask the Rails community on X for advice. Special thanks to those who replied to help build by tactic list: @bchecketts, @MichaelDChaney, @yarotheslav, @tomcnle, and @paraxialio:
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Soon after deploying my Rails 8 app with Devise, it got bombarded by bots causing the app to send 100 Welcome and PW reset emails to basically nobody! <br><br>After adding the Confirmable module, what’s the best way to avoid sending tons of confirmation emails to fake addresses?</p>&mdash; Tygh Walters (@TyghWalters) <a href="https://twitter.com/TyghWalters/status/1874702583962705953?ref_src=twsrc%5Etfw">January 2, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-- 3rd - Disable new sign ups and sessions
-    - Add Rails-native rate limiting and paranoid Devise messaging
+- 3rd - Disable new sign ups, sessions, and email-sending
+    - Add Rails rate limiting to registration form
+    - Add paranoid messaging for Devise authentication
 - 11th - Add DMARC management in Cloudflare
 - 14th - Improve email validation with Ruby's email REGEXP
-- 15th - Enable Bot Fight Mode, DNSSEC. Finalize registrar transfer to Cloudflare
+- 15th - Enable Bot Fight Mode, DNSSEC. 
+    - Finalize registrar transfer to Cloudflare
 - 20th - Start transfer of all 10 of my domains to Cloudflare
 - 24th - Destroy manually all unconfirmed (fake) user accounts 
 - 26th - Fly production console machines configuration optimization
@@ -99,47 +103,49 @@ Below is my timeline of discovering bot activity and resolving it for free while
 - 19th - Reopened sign ups and logins
 
 #### March 
-- 12th - Bot attacks re-start!
-- 18th - New attack found, re-disable sign ups and sessions 
+- 12th - Bot attacks re-start and again, I surpass my monthly email quota!
+- 18th - New attack found
+    - Re-disable sign ups and sessions until fixed
 - 22nd - Add hidden timestamp validation
 - 23rd - Add two unique honeypot fields
 - 30th - Fix TLS cert expiration issue
 
 #### April 
 - 5th - Implement real_ip rate limiting to compensate for Cloudflare's proxy IP defense
-- 6th - Re-open for sign-ups and re-enable email sending! 
+- 6th - Re-enable sign-ups, logins, and email sending! 
 
 ## My Anti-BOT Checklist for web app form spam prevention
 
 Here's my own way to organize different anti-bot measures, from top to bottom. Which tactics am I missing?
 
-1. My app's DNS (Cloudflare)
+1. DNS Management (Cloudflare)
     1. DDoS protection
     2. DNSSEC
     3. Privacy for your contact details
     4. Bot Fight Mode with JavaScript Detections 
     5. Record proxying
     6. Email authentication records: SPF, DKIM, and DMARC
-2. My app's host (Fly.io)
+2. App Host (Fly.io)
     1. TLS, or Transport Layer Security - a cryptographic protocol that provides secure communication over a computer network
-    2. Memory-Safe Rust Proxy
-    3. Autostop/ Autostart
-3. My app's code (Ruby on Rails)
+    2. Autostop/ Autostart
+3. App code (Ruby on Rails)
     1. IP-based activity
-        - Rate limiting actions on IP or other attribute to reduce brute force attacks 
+        - Rate limiting actions on IP or other to reduce brute force attacks. See "[Brute-Forcing Accounts](https://edgeguides.rubyonrails.org/security.html#brute-forcing-accounts)" for more.
     2. Authentication
-        1. Paid only! $$ - Bots are usually thwarted by payments. Accepting payment before user creation is a bot filter.
+        1. Paid only - Bots are usually thwarted by payments. Accepting payment before User creation may be a better bot filter.
         2. Oauth with Google, Facebook, Github, etc.
+            - Let a large organization with massive resources worry about the bots. 
         3. Email authentication with Devise, Rails Auth, etc. 
             1. Limit sign in attempts
             2. Limit password reset emails
-            3. Email validation (prove it's well-formed)
-            4. Email verification (prove it can receive mail)
-            5. Email confirmation (prove user has access)
-            7. Generic error messages - Devise's paranoid mode
+            3. Email validation (prove address is well-formed)
+            4. Email verification (prove address can receive mail)
+            5. Email confirmation (prove user has access to email)
+            7. Generic error messages - Devise's paranoid mode. This prevents attempts to "guess" accounts, or account enumeration, by avoiding sharing identifiable or revealing data to the user.
     3. [CAPTCHAs](https://edgeguides.rubyonrails.org/security.html#captchas)
         1. Google Recaptcha gem (Positive)
         2. Honeypot - hidden form field (Negative)
+            - See, "[Stopping spambots with hashes and honeypots](https://nedbatchelder.com/text/stopbots.html)"
 
 ## Other Thoughts
 
@@ -151,7 +157,7 @@ My theory is that in this relatively "unavailable" state, my aps were protected 
 
 ### Visibility into bot activity
 
-I'm sending myself an email with data about the deterred registrant whenever the honeypot gets triggered. The email includes the user's IP, duration to sign up, etc. I review for patterns to know how to adjust my honeypot.
+I'm sending myself an email with data about the deterred bot registrant whenever the honeypot catches one. The email includes the IP, duration to sign up, etc. I review for patterns to know how and if to adjust my honeypot.
 
 ### What worked against the bots?
 
@@ -159,11 +165,13 @@ I'm sending myself an email with data about the deterred registrant whenever the
 
 By far, the most effective tactic was the honeypot, especially once it was made to be more than just a single text field. 
 
-I experienced consistent bot sign ups until the honeypot was installed. Bots were initially thwarted, then able to outsmart my simple honeypot. Making it more complicated with a timestamp validation and several different honeypot fields made the largest difference. 
+I experienced consistent bot sign ups until the honeypot was installed. Bots were initially thwarted, then able to outsmart my simple honeypot. 
+
+Making it more complicated with a timestamp validation and several different honeypot fields made the largest difference. 
 
 #### Email confirmation
 
-I have some evidence of bot sign ups that were able to confirm the email, but maybe 95% do not. I found this when sign ups were open for a period and did not require confirmation. 
+I have some evidence of bot registrations that were able to confirm the email, but maybe 95% do not. I found this when sign ups were open for a period and did not require confirmation. 
 
 ### What didn't work against the bots?
 
@@ -182,7 +190,7 @@ A single honeypot field was not enough. After a few weeks bots seemed to "figure
 
 #### Email validation
 
-Upon my non-expert manual visual review, most if not all of the thousands of bot sign ups seem to be associated with well-formed emails, I do not even see many "disposable" emails. Enhancing this slightly, as I did, or even more does not seem matter much. 
+Upon my non-expert manual visual review, most if not all of the thousands of bot sign ups seem to be associated with well-formed emails, I do not even see many "disposable" emails. Enhancing this slightly, as I did, or even more does not seem to matter much. 
 
 ## What's next?
 
@@ -192,7 +200,7 @@ I wonder if my sophisticated honeypot will fail to be enough one day. A Turnstil
 
 ### Paid only or Freemium?
 
-Using a pay wall to inhibit account creation seems like a win-win but aren't there benefits of a free plan? Maybe a free plan with credit card validation as an additional measure?
+Using a paywall to inhibit account creation seems like a win but aren't there benefits of a free plan? Maybe a free plan with credit card validation as an additional measure?
 
 ### Email verification?
 
@@ -200,11 +208,11 @@ Proving an email address actually exists and can receive mail through verificati
 
 ## Summary
 
-When my new Rails 8 apps were exposed to the world wide web and made readily available, the spam bot bullies attacked and incessantly to tried and knock my app's doors down. 
+When my new Rails 8 apps were exposed to the world wide web and made readily available, the spam bot bullies attacked and incessantly tried to knock my apps' doors down. 
 
-I responded by learning their tricks, implementing simple and well-advocated counter measures to avoid filling my database and email quota with their gibberish. 
+I responded by learning their tricks, implementing simple and effective counter measures to avoid filling my database and email servers with their gibberish. 
 
-The result; an app made of glimmering ruby-colored bricks that is now much less-penetrable by the evil robots of the web. 
+The result; an app made of glimmering ruby-colored bricks made much less-penetrable by the evil robots of the web.
 
 ## Resources for anti-bot security 
 
