@@ -9,7 +9,7 @@ image: /assets/honeypot_bots_blue_drumlin.png
 
 ## My first Rails apps deployed
 
-About a year ago I launched (deployed) my first two Rails apps, [GeoGardening](https://geogardening.app/) and [SlopeCS](https://slopecs.com/) with fly.io and everything was great. I was still building, testing - learning how to get "Hello World" out to the actual world for the very first time. Then, on New Years Eve 2024, all of that changed and I was thrust into a 4-month ongoing battle against the spambots. 
+About a year ago I launched (deployed) my first two Rails apps, [GeoGardening](https://geogardening.app/) and [SlopeCS](https://slopecs.com/) with fly.io and everything was great. I was still building, testing - learning how to get "Hello World" out to the actual world for the very first time. Then, on New Years Eve 2024, all of that changed and I was thrust into a four-month ongoing battle against the spambots. 
 
 Further below, I share my timeline and my own Anti-BOT Checklist. Some tactics implemented and others I have yet to try.
 
@@ -23,7 +23,7 @@ That was until that one day I received an email from Postmark, my email service 
 
 "Wait, what?! I didn't do THAT much testing this month. Maybe these are real users?" 
 
-I logged into Postmark to find over 140 "Welcome" and "Password reset" emails were sent with a very high bounce and spam rate, hurting my deliverability score, and immediately filling my monthly quota by + 40%! Many of the emails looked legit, @gmail domains, but the usernames were suspicious: like `kdsjc67df(at)gmail.com`
+I logged into Postmark to find over 140 "Welcome" and "Password reset" emails were sent with a very high bounce and spam rate, hurting my deliverability score, and immediately filling my monthly quota by + 40%! Many of the emails looked legit, @gmail domains, but the usernames were suspicious: like `fakename123(at)gmail.com`
 
 Next, I logged into the production console and looked at the User table in my production database...
 
@@ -49,7 +49,7 @@ Some bots are trying to post links that will get clicks. Don't let them!
 
 ## Fixing bots, the Rails Way
 
-I'm using Rails 8 and Devise for authentication. After Googling, asking AI, and the X community for tips on how to mitigate these bots, I turned to the authoritative Rails Edge Guides to see what they had to say, see [Securing Rails Applications](https://edgeguides.rubyonrails.org/security.html).
+I'm using Rails 8 and Devise for authentication. After Googling, asking AI, and the X community for tips on how to mitigate these bots, I turned to the authoritative Rails Edge Guides to see what they had to say, see, [Securing Rails Applications](https://edgeguides.rubyonrails.org/security.html).
 
 ### CAPTCHAs, positive and negative
 
@@ -69,7 +69,7 @@ Example: A bot completes the invisible honeypot form fields which discards the s
 
 ## My anti-bot timeline 
 
-With two apps deployed for almost a year, I was feeling good about life and coding, then the bots arrived...
+With two apps deployed for almost a year without any new Users, I was feeling stable, good about life and coding, then the bots arrived...
 
 Below is my timeline of first discovering bot activity and resolving it for free while keeping a nice experience for my eventual authentic human users.
 
@@ -78,7 +78,7 @@ Below is my timeline of first discovering bot activity and resolving it for free
 
 #### January, 2025 
 - 1st - Start studying security and anti-bot tactics
-    - Require email confirmation to access account
+    - Require email confirmation to access account with [Confirmable](https://rubydoc.info/gems/devise/Devise/Models/Confirmable) module
     - Ask the Rails community on X for advice. Special thanks to those who replied to help build by tactic list: @bchecketts, @MichaelDChaney, @yarotheslav, @tomcnle, and @paraxialio:
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Soon after deploying my Rails 8 app with Devise, it got bombarded by bots causing the app to send 100 Welcome and PW reset emails to basically nobody! <br><br>After adding the Confirmable module, what’s the best way to avoid sending tons of confirmation emails to fake addresses?</p>&mdash; Tygh Walters (@TyghWalters) <a href="https://twitter.com/TyghWalters/status/1874702583962705953?ref_src=twsrc%5Etfw">January 2, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
