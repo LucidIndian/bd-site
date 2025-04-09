@@ -37,7 +37,7 @@ defaults:
   - scope:
       path: ""
     values:
-      image: /assets/bd_logo_280pxsquare.png
+      image: /assets/bd_logo500pxsquare.png
 
 # Build settings
 theme: minima

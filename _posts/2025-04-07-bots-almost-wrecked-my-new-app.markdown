@@ -13,15 +13,23 @@ About a year ago I launched (deployed) my first two Rails apps, [GeoGardening](h
 
 ### Getting to the BOT-tom of suspicious sign ups
 
-Shortly after upgrading my apps' servers in late 2024 to be "always on", they each received A TON of activity and I didn't find out until it was too late.
+Shortly after upgrading my apps' servers in late 2024 to be "always on", they each suddenly received A TON of activity and I didn't find out until it was too late.
 
-My apps send a welcome email after a User account is created; pretty basic stuff, right?
+My apps have email authentication, password reset, and send a welcome email after a User account is created; pretty basic stuff, right?
 
-First, I found over 140 "Welcome" and "password reset" emails were sent from my Postmark account with a high percentage bounced and reported as spam, hurting my deliverability score, and immediately filling my monthly quota. What?! I didn't do that much testing this month? So I looked at the production database next...
+One day I received an email from Postmark, my email service provider, noting that I had reached my monthly quota of 100 emails on the free plan. 
 
-I found over 1,400 user accounts with about 15 new accounts being created every day! 
+"Wait, what?! I didn't do that much testing this month? Maybe it's real users?" 
 
-"Wait, did I stumble upon a massive, unicorn success?!"  No... In fact, all users besides my test accounts were fake - all bots - every single one. Major disappointment! 
+I logged into Postmark to find over 140 "Welcome" and "password reset" emails were sent with a very high bounce and spam rate, hurting my deliverability score, and immediately filling my monthly quota by + 40%! 
+
+Many of the emails looked legit, @gmail domains, but the usernames were suspicious: like kdsjc67df(at)gmail.com
+
+Next, I logged into the production console and looked at the User table in my production database...
+
+Over 1,400 user accounts had been created with about 15 new ones every day! 
+
+"Wait, did I stumble upon a massive, unicorn success?!"  No... In fact, it turned out all users besides my few test accounts were fake - all created by bots - every single one. Major disappointment! 
 
 I started to panic - will Postmark close my account and blacklist my domain?!
 
@@ -29,8 +37,7 @@ No, this must happen all of the time, it's basic stuff, just gotta fix it; the R
 
 ## Fixing bots the Rails Way
 
-I'm using Rails 8 and Devise for authentication, see [Securing Rails Applications](https://edgeguides.rubyonrails.org/security.html). 
-
+I'm using Rails 8 and Devise for authentication. After Googling and asking AI for tips, I turned to the Rails Guides to see what they had to say about this, see [Securing Rails Applications](https://edgeguides.rubyonrails.org/security.html). 
 
 Near the end I share my own anti-bot checklist I'm building, many tactics I have yet to try.
 
@@ -119,13 +126,43 @@ Here's my own way to organize different anti-bot measures, from top to bottom. W
 
 ### Visibility into bot activity
 
-I'm sending myself an email with data about the deterred registrant  when the honeypot gets triggered. I review to see patterns to know how to adjust.
+I'm sending myself an email with data about the deterred registrant whenever the honeypot gets triggered. The email includes the user's IP, duration to signup, etc. I review for patterns to know how to adjust my honeypot.
 
 ### App server availability and spam
 
 Using Fly.io, I had each on the smallest possible configuration that would still run the apps while keeping costs as low as possible. This entailed the app servers shutting down with inactivity, the result was a slower/cold start but it was great because I had no users yet. 
 
 My theory is that in this relatively "unavailable" state, my aps were protected from spam bots. Since the cold startup issue, perhaps bots would not wait around long enough for my slower site to load? Why else would the bots suddenly attack both my apps? Seems like more than just a coincidence.
+
+### What worked
+
+#### An advanced honeypot
+
+By far, the most effective tactic was the honeypot, or negative CAPTCHA, especially once it was made to be more complicated than just a single field. 
+
+I experienced consistent bot sign ups until the honeypot was installed. Bots were initially thwarted, then able to outsmart my simple honeypot. Making it more complicated with a timestamp validation and several different honeypot fields made the largest difference. 
+
+#### Email confirmation
+
+I have some evidence of bot sign ups that were able to confirm the email, but maybe 95% do not. I found this when sign ups were open for a period and did not require confirmation. 
+
+### What didn't work
+
+#### Cloudflare
+
+Surprisingly, I thought moving to Cloudflare for DNS and enabling their Bot Fight Mode would have been enough to stop the fraudulent sign ups.
+
+In their defense: 
+- I'm on the free plan and perhaps better configuration would help
+- I'm sure my sites benefit in other ways from their anti-spam features
+
+#### A simple honeypot
+
+A single field was not enough after a few weeks, bots seemed to "figure it out" or get lucky by avoiding that field upon registration. 
+
+#### Email validation
+
+All of the thousands of bot sign ups seem to be associated with well-formed emails, I do not even see many "disposable" emails. Enhancing this slightly, as I did, or even more does not seem matter much. 
 
 ## Summary
 
