@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Bots Almost Wrecked my New Rails App - What I Did to Stop Them"
+title:  "Spam Bots Almost Wrecked my New Rails App - What I Did to Stop Them"
 date:   2025-4-7 00:00:00 -0700
 categories: rails coding
 tags: slopecs rails coding bots spam
@@ -139,15 +139,15 @@ Here's my own way to organize different anti-bot measures, from top to bottom. W
 
 ## Other Thoughts
 
-### Visibility into bot activity
-
-I'm sending myself an email with data about the deterred registrant whenever the honeypot gets triggered. The email includes the user's IP, duration to signup, etc. I review for patterns to know how to adjust my honeypot.
-
 ### App server availability and spam
 
 Using Fly.io, I had each on the smallest possible configuration that would still run the apps while keeping costs as low as possible. This entailed the app servers shutting down with inactivity, the result was a slower/cold start but it was great because I had no users yet. 
 
 My theory is that in this relatively "unavailable" state, my aps were protected from spam bots. Since the cold startup issue, perhaps bots would not wait around long enough for my slower site to load? Why else would the bots suddenly attack both my apps? Seems like more than just a coincidence.
+
+### Visibility into bot activity
+
+I'm sending myself an email with data about the deterred registrant whenever the honeypot gets triggered. The email includes the user's IP, duration to sign up, etc. I review for patterns to know how to adjust my honeypot.
 
 ### What worked against the bots?
 
@@ -178,29 +178,33 @@ A single honeypot field was not enough. After a few weeks bots seemed to "figure
 
 #### Email validation
 
-Upon manual visual review, wll of the thousands of bot sign ups seem to be associated with well-formed emails, I do not even see many "disposable" emails. Enhancing this slightly, as I did, or even more does not seem matter much. 
+Upon my non-expert manual visual review, most if not all of the thousands of bot sign ups seem to be associated with well-formed emails, I do not even see many "disposable" emails. Enhancing this slightly, as I did, or even more does not seem matter much. 
 
 ## What's next?
 
 ### Positive CAPTCHa?
 
-I wonder if my sophisticated honeypot will fail to be enough one day. 
+I wonder if my sophisticated honeypot will fail to be enough one day. A Turnstile by Cloudflare or the reCAPTCHA from Google are on my to-do list.
 
-### Paid only or Freemium
+### Paid only or Freemium?
 
 Using a pay wall to inhibit account creation seems like a win-win but aren't there benefits of a free plan? Maybe a free plan with credit card validation as an additional measure?
 
+### Email verification?
+
+Proving an email address actually exists and can receive mail through verification before accepting it is different and feels more promising to help avoid nonexistent registrants (fake emails).
+
 ## Summary
 
-When my new Rails 8 apps were exposed to the world wide web and made readily available, the spam bot bullies incessantly to tried and knock my app's doors down. 
+When my new Rails 8 apps were exposed to the world wide web and made readily available, the spam bot bullies attacked and incessantly to tried and knock my app's doors down. 
 
-I responded by learning their tricks and implementing simple and well-advocated counter measures to avioding filling my database and email server with their gibberish. 
+I responded by learning their tricks, implementing simple and well-advocated counter measures to avoid filling my database and email quota with their gibberish. 
 
 The result; an app made of glimmering ruby-colored bricks that is now much less-penetrable by the evil robots of the web. 
 
-## Resources
+## Resources for anti-bot security 
 
 1. "[Securing Rails Applications](https://edgeguides.rubyonrails.org/security.html)" from the Ruby on Rails Guides.
-2. "[Stopping spambots with hashes and honeypots](https://nedbatchelder.com/text/stopbots.html)" by Ned Batchelder - More sophisticated negative CAPTCHAs. 
+2. "[Stopping spambots with hashes and honeypots](https://nedbatchelder.com/text/stopbots.html)" by Ned Batchelder - A more sophisticated negative CAPTCHA. 
 3. "[How To: Add :confirmable to Users](https://github.com/heartcombo/devise/wiki/How-To:-Add-:confirmable-to-Users)" from heartcombo / devise.
-4. "[6.1. Brute-Forcing Accounts](https://edgeguides.rubyonrails.org/security.html#brute-forcing-accounts)" reviews the built-in rate-limiter in Rails.
+4. "[Brute-Forcing Accounts](https://edgeguides.rubyonrails.org/security.html#brute-forcing-accounts)" from the Ruby on Rails Guides, reviews the built-in rate-limiter to protect your registration and session forms.
