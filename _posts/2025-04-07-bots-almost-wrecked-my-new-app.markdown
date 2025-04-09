@@ -133,6 +133,7 @@ Here's my way to organize the various anti-bot measures I found, from top to bot
 3. App code
     1. IP-based activity
         - Rate limiting actions on the IP address (location) of the request or other to reduce brute force attacks. See "[Brute-Forcing Accounts](https://edgeguides.rubyonrails.org/security.html#brute-forcing-accounts)" for more.
+        - [Paraxial.io Ruby Agent](https://rubygems.org/gems/paraxial), a gem to manage a ban bots 
     2. Authentication
         1. Oauth with Google, Facebook, Github, etc.
             - Let a large organization with massive resources worry about the bots. 
