@@ -4,9 +4,9 @@
 title: Home
 layout: home
 ---
-![Blue Drumlin Logo](/assets/bd_logo_280pxsquare.png)
+## Blue Drumlin makes useful and sustainable apps with Ruby on Rails!
 
-Blue Drumlin makes beautiful, useful, and sustainable apps with [Ruby on Rails](https://rubyonrails.org/)!
+![Blue Drumlin Logo](/assets/bd_logo_280pxsquare.png)
 
 ## Blue Drumlin builds
 - An expert framework for e-commerce customer service - [SlopeCS](https://slopecs.com/)
