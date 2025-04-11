@@ -1,8 +1,7 @@
 ---
 layout: page
-title: Pushes and Pushups: Building Triceps and Tech Startups with Ruby on Rails
-
-permalink: /about/
+title: Pushes and Pushups--Building Triceps and Tech Startups with Ruby on Rails
+permalink: /pushes-and-pushups/
 ---
 
 ## Pushes and Pushups
