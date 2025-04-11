@@ -4,7 +4,7 @@
 title: Home
 layout: home
 ---
-## Blue Drumlin makes useful and sustainable apps with Ruby on Rails!
+## Blue Drumlin builds with Ruby on Rails!
 
 ![Blue Drumlin Logo](/assets/bd_logo_280pxsquare.png)
 
