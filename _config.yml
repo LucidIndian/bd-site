@@ -27,7 +27,7 @@ domain: bluedrumlin.com  # if you want to force HTTPS, specify the domain withou
 baseurl: # the subpath of your site, e.g. /blog
 url: https://bluedrumlin.com # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: bluedrumlin
-github_username:  LucidIndian
+github_username: LucidIndian
 social:
   name: Blue Drumlin
   links:
