@@ -4,7 +4,9 @@ title: Pushes and Pushups
 permalink: /pushes-and-pushups/
 ---
 
-## Building Triceps and Tech Startups with Ruby on Rails
+## Pushes and Pushups
+
+### Building Triceps and Tech Startups with Ruby on Rails
 
 Vlog Series Coming soon
 
